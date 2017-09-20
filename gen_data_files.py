@@ -20,6 +20,8 @@ def parse_rst(filename):
         format_end = 0
         details_start=0
         details_end=0
+        notes_start = 0
+        notes_end = 0
         source_start = 0
         source_end=0
         final_line = 0
@@ -39,6 +41,12 @@ def parse_rst(filename):
                 if format_start >0:
                     format_end = i-1;
                 details_start= i+2
+            if line.strip()=='Note':
+                if desc_line_end == 0:
+                   desc_line_end = i - 1
+                if format_start >0:
+                    format_end = i-1;
+                notes_start= i+2
             if line.strip()=='Source':
                 if desc_line_end == 0:
                    desc_line_end = i - 1 
@@ -46,6 +54,8 @@ def parse_rst(filename):
                     format_end = i-1;
                 if details_start > 0:
                     details_end = i-1
+                if notes_start > 0:
+                    notes_end = i-1
                 source_start = i+2
             if line.strip()=='References':
                 source_end = i - 1
@@ -84,29 +94,52 @@ def extract_rst(extract_dict):
     indent='  '
     with open(extract_dict['file_name']) as f:
         for i,line in enumerate(f):
+            line = line.rstrip(' ')
             if i == extract_dict['title']:
-                #print(line)
-                output+=line
+                if len(line) > 74:
+                    output += line[:74] + '\n'
+                    next_line = line[74:]
+                    if not next_line.strip()=='':
+                        output += indent + next_line
+                else:
+                    output+=line
             if i >= extract_dict['desc_start'] and i < extract_dict['desc_end']:
                 #print(line)
                 if line == '\n':
                     output+= line
                 else:
-                    output+=indent+line
+                    if len(line) > 77:
+                        output += line[:77] + '\n'
+                        next_line = line[77:]
+                        if not next_line.strip() == '':
+                            output += indent + next_line
+                    else:
+                        output+=indent+line
             if extract_dict['format_start'] > 0:
                 if i >= extract_dict['format_start'] and i < extract_dict['format_end']:
                     #print(line)
                     if line == '\n':
                         output += line
                     else:
-                        output += indent + line
+                        if len(line) > 77:
+                            output += line[:77] + '\n'
+                            next_line = line[77:]
+                            if not next_line.strip() == '':
+                                output += indent + next_line
+                        else:
+                            output += indent + line
             if extract_dict['source_start'] > 0:
                 if i >= extract_dict['source_start'] and i < extract_dict['source_end']:
-                    #print(line)
                     if line == '\n':
                         output += line
                     else:
-                        output += indent + line
+                        if len(line) > 77:
+                            output += line[:77] + '\n'
+                            next_line = line[77:]
+                            if not next_line.strip() == '':
+                                output += indent + next_line
+                        else:
+                            output+=indent+line
         output=output.replace('``','`')
     return output
 
@@ -162,7 +195,7 @@ def gen_data_test_files(row, file_path='./', test_file_path='./'):
                            'test_'+context['function']+'.py'), 'w') as f:
         f.write(test_file_str)
 
-def gen_init_file(dataset, path, import_prefix='observations.rdata'):
+def gen_init_file(dataset, path, import_prefix='observations.r'):
     def import_names(x):
         return 'from ' + import_prefix + '.' + x + ' import ' + x
 
@@ -180,7 +213,7 @@ def gen_init_file(dataset, path, import_prefix='observations.rdata'):
     
 
 def gen_data_test_files_from_csv(file, src_path, test_path,
-                                 import_prefix='observations.rdata'):
+                                 import_prefix='observations.r'):
     if not os.path.exists(src_path):
         os.makedirs(src_path)
     if not os.path.exists(test_path):
@@ -192,5 +225,5 @@ def gen_data_test_files_from_csv(file, src_path, test_path,
     
     
 if __name__ == "__main__":
-    gen_data_test_files_from_csv('datasets_mod.csv', './observations/rdata/',
-                               './observations/rdata/tests/')
+    gen_data_test_files_from_csv('datasets_mod.csv', './observations/r/',
+                               './tests/r')

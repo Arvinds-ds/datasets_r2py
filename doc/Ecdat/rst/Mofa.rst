@@ -2,11 +2,13 @@
 | Mofa   | R Documentation   |
 +--------+-------------------+
 
-International Expansion of U.S. Mofa's (majority–owned Foreign Affiliates in Fire (finance, Insurance and Real Estate)
-----------------------------------------------------------------------------------------------------------------------
+International Expansion of U.S. Mofa's (majority–owned Foreign Affiliates)
+---------------------------------------------------------------------------
 
 Description
 ~~~~~~~~~~~
+Expansion of U.S. Mofa's (majority–owned Foreign Affiliates) in
+Fire (finance, Insurance and Real Estate)
 
 a cross-section from 1982
 

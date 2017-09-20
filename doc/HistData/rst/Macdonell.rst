@@ -2,8 +2,8 @@
 | Macdonell   | R Documentation   |
 +-------------+-------------------+
 
-Macdonell's Data on Height and Finger Length of Criminals, used by Gosset (1908)
---------------------------------------------------------------------------------
+Macdonell's Data on Height and Finger Length of Criminals, Gosset (1908)
+-----------------------------------------------------------------------------
 
 Description
 ~~~~~~~~~~~

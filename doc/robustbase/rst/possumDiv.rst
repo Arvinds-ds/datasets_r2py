@@ -67,8 +67,6 @@ Habitat
 BAcacia
     a numeric vector giving the basal area of acacia species.
 
-| 
-
 eucalyptus
     a 3-level ``factor`` specifying the species of eucalypt with the
     greatest stand basal area. This has the same information as the
@@ -82,8 +80,6 @@ E.delegatensis
 
 E.nitens
     0-1 indicator for Eucalyptus nitens
-
-| 
 
 aspect
     a 4-level ``factor`` specifying the aspect of the site. It is the

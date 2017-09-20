@@ -6,18 +6,19 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
-from observations.rdata.{{function}} import {{function}}
+from observations.r.{{function}} import {{function}}
+
 
 def test_{{function}}():
-  """Test module {{function}}.py by downloading {{file_name}} and testing shape of 
-    extracted data has {{rows}} rows and {{cols}} columns
+  """Test module {{function}}.py by downloading
+   {{file_name}} and testing shape of
+   extracted data has {{rows}} rows and {{cols}} columns
   """
   test_path = tempfile.mkdtemp()
   x_train, metadata = {{function}}(test_path)
   try:
-    assert x_train.shape == ({{rows}},{{cols}})
+    assert x_train.shape == ({{rows}}, {{cols}})
   except:
     shutil.rmtree(test_path)
     raise()
- 
+

@@ -1,4 +1,4 @@
-"""[Observations](https://github.com/edwardlib/observations) provides
+"""[Observations.r](https://github.com/edwardlib/observations) provides
 a one line Python API for loading standard data sets in machine
 learning. It automates the process from downloading, extracting,
 loading, and preprocessing data. Observations helps keep the workflow
@@ -39,10 +39,11 @@ def remove_undocumented(module_name, allowed_exception_list=None):
 
 # Export modules and constants.
 _allowed_symbols = [
-  {{allowed_symbols}}
+{{allowed_symbols}}
 
 ]
 
 # Remove all extra symbols that don't have a docstring or are not explicitly
 # referenced in the whitelist.
 remove_undocumented(__name__, _allowed_symbols)
+
