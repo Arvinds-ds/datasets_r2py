@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.beav2 import beav2
 
 def test_beav2():

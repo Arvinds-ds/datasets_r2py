@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.immi2 import immi2
 
 def test_immi2():

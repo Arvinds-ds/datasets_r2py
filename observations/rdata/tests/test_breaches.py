@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.breaches import breaches
 
 def test_breaches():

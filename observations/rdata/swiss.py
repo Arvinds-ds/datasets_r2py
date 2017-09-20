@@ -19,21 +19,36 @@ def swiss(path):
   A data frame with 47 observations on 6 variables, *each* of which is in
   percent, i.e., in *[0, 100]*.
 
-  +--------+--------------------+---------------------------------------------------------+
-  | [,1]   | Fertility          | *Ig*, ‘common standardized fertility measure’           |
-  +--------+--------------------+---------------------------------------------------------+
-  | [,2]   | Agriculture        | % of males involved in agriculture as occupation        |
-  +--------+--------------------+---------------------------------------------------------+
-  | [,3]   | Examination        | % draftees receiving highest mark on army examination   |
-  +--------+--------------------+---------------------------------------------------------+
-  | [,4]   | Education          | % education beyond primary school for draftees.         |
-  +--------+--------------------+---------------------------------------------------------+
-  | [,5]   | Catholic           | % ‘catholic’ (as opposed to ‘protestant’).              |
-  +--------+--------------------+---------------------------------------------------------+
-  | [,6]   | Infant.Mortality   | live births who live less than 1 year.                  |
-  +--------+--------------------+---------------------------------------------------------+
+  +------+-----------------+-------------------------------------------------+
+  | [,1] | Fertility       | *Ig*, ‘common standardized fertility measure’   |
+  +------+-----------------+-------------------------------------------------+
+  | [,2] | Agriculture     | % of males involved in agriculture as occupation|
+  +------+-----------------+-------------------------------------------------+
+  | [,3] | Examination     | % draftees receiving highest mark on army       |
+  |      |                 | examination                                     |
+  +------+-----------------+-------------------------------------------------+
+  | [,4] | Education       | % education beyond primary school for draftees. |
+  +------+-----------------+-------------------------------------------------+
+  | [,5] | Catholic        | % ‘catholic’ (as opposed to ‘protestant’).      |
+  +------+-----------------+-------------------------------------------------+
+  | [,6] | Infant.Mortality| live births who live less than 1 year.          |
+  +------+-----------------+-------------------------------------------------+
 
   All variables but ‘Fertility’ give proportions of the population.
+
+  Details
+  ~~~~~~~
+
+  (paraphrasing Mosteller and Tukey):
+
+  Switzerland, in 1888, was entering a period known as the *demographic
+  transition*; i.e., its fertility was beginning to fall from the high
+  level typical of underdeveloped countries.
+
+  The data collected are for 47 French-speaking “provinces” at about 1888.
+
+  Here, all variables are scaled to *[0, 100]*, where in the original, all
+  but `"Catholic"` were scaled to *[0, 1]*.
 
   Project “16P5”, pages 549–551 in
 
@@ -50,6 +65,7 @@ def swiss(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `swiss.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 47 rows and 6 columns and

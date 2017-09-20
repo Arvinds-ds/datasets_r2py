@@ -31,6 +31,7 @@ def reise(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `reise.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 16 rows and 16 columns and

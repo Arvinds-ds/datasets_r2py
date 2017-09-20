@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.tooth_growth import tooth_growth
 
 def test_tooth_growth():

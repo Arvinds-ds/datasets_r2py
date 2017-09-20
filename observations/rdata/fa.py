@@ -40,6 +40,7 @@ def fa(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `fa.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 127 rows and 13 columns and

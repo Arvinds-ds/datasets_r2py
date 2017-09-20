@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.overdrawn import overdrawn
 
 def test_overdrawn():

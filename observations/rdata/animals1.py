@@ -21,12 +21,6 @@ def animals1(path):
   `brain`
       brain weight in g.
 
-  Note
-  ~~~~
-
-  The name `Animals` avoids conflicts with a system dataset `animals`
-  in S-PLUS 4.5 and later.
-
   P. J. Rousseeuw and A. M. Leroy (1987) *Robust Regression and Outlier
   Detection.* Wiley, p. 57.
 
@@ -36,6 +30,7 @@ def animals1(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `animals1.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 28 rows and 2 columns and

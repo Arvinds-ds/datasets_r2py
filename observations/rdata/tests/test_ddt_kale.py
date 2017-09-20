@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.ddt_kale import ddt_kale
 
 def test_ddt_kale():

@@ -33,6 +33,7 @@ def caravan(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `caravan.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 5822 rows and 86 columns and

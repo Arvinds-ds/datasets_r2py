@@ -43,6 +43,7 @@ def chemo_thc(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `chemo_thc.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 2 rows and 4 columns and

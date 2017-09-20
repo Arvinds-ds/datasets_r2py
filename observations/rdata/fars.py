@@ -71,6 +71,18 @@ def fars(path):
   `year`
       year of accident
 
+  Details
+  ~~~~~~~
+
+  Data is for automabiles where the right passenger seat was occupied,
+  with one observation for each such passenger. Observations for vehicles
+  where the most harmful event was a fire or explosion or immersion or gas
+  inhalation, or where someone fell or jumped from the vehicle, are
+  omitted. Data are limited to vehicle body types 1 to 19,48,49,61, or 62.
+  This excludes large trucks, pickup trucks, vans and buses. The 2009 and
+  2010 data does not include information on whether airbags were
+  installed.
+
   http://www-fars.nhtsa.dot.gov/Main/index.aspx
 
   Args:
@@ -79,6 +91,7 @@ def fars(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `fars.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 151158 rows and 17 columns and

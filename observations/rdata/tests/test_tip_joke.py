@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.tip_joke import tip_joke
 
 def test_tip_joke():

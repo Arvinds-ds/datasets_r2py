@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.leinhardt import leinhardt
 
 def test_leinhardt():

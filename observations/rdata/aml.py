@@ -39,12 +39,6 @@ def aml(path):
       The group into which the patient was randomized. Group 1 received
       maintenance chemotherapy, group 2 did not.
 
-  Note
-  ~~~~
-
-  Package survival also has a dataset `aml`. It is the same data with
-  different names and with `group` replaced by a factor `x`.
-
   The data were obtained from
 
   Miller, R.G. (1981) *Survival Analysis*. John Wiley.
@@ -55,6 +49,7 @@ def aml(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `aml.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 23 rows and 3 columns and

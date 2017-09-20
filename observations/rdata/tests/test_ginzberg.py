@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.ginzberg import ginzberg
 
 def test_ginzberg():

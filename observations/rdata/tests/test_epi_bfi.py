@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.epi_bfi import epi_bfi
 
 def test_epi_bfi():

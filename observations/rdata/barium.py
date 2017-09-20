@@ -79,7 +79,8 @@ def barium(path):
 
   -  percchn. percent imports from china
 
-  https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_
+  isbn_issn=9781111531041
 
   Args:
 
@@ -87,6 +88,7 @@ def barium(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `barium.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 131 rows and 31 columns and

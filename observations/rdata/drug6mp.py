@@ -42,6 +42,7 @@ def drug6mp(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `drug6mp.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 21 rows and 5 columns and

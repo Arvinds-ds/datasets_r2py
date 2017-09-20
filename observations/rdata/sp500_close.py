@@ -23,6 +23,7 @@ def sp500_close(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `sp500_close.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 2780 rows and 1 columns and

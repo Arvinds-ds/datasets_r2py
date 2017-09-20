@@ -26,6 +26,7 @@ def french_fries(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `french_fries.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 696 rows and 9 columns and

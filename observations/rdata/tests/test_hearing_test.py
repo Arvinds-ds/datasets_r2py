@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.hearing_test import hearing_test
 
 def test_hearing_test():

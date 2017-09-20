@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.nkill_by_country_yr import nkill_by_country_yr
 
 def test_nkill_by_country_yr():

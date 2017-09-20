@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.us_gdp_presidents import us_gdp_presidents
 
 def test_us_gdp_presidents():

@@ -69,6 +69,7 @@ def males1(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `males1.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 4360 rows and 12 columns and

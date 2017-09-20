@@ -37,7 +37,8 @@ def smoke(path):
 
   -  lcigpric. log(cigprice)
 
-  https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_
+  isbn_issn=9781111531041
 
   Args:
 
@@ -45,6 +46,7 @@ def smoke(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `smoke.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 807 rows and 10 columns and

@@ -32,6 +32,7 @@ def galaxies(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `galaxies.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 82 rows and 1 columns and

@@ -57,6 +57,7 @@ def uk_driver_deaths(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `uk_driver_deaths.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 192 rows and 2 columns and

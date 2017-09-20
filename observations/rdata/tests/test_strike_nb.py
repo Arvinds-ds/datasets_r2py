@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.strike_nb import strike_nb
 
 def test_strike_nb():

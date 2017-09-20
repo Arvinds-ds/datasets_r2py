@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.alcohol1 import alcohol1
 
 def test_alcohol1():

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.blue_jays import blue_jays
 
 def test_blue_jays():

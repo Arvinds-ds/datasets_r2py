@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.tomlinson_rush import tomlinson_rush
 
 def test_tomlinson_rush():

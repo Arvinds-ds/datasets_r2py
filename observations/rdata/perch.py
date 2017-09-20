@@ -42,6 +42,7 @@ def perch(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `perch.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 56 rows and 4 columns and

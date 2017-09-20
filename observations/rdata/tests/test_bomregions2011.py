@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.bomregions2011 import bomregions2011
 
 def test_bomregions2011():

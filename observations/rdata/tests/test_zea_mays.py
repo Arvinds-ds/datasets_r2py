@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.zea_mays import zea_mays
 
 def test_zea_mays():

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.cp_sch3 import cp_sch3
 
 def test_cp_sch3():

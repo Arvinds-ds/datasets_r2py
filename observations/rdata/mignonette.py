@@ -34,6 +34,7 @@ def mignonette(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `mignonette.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 24 rows and 2 columns and

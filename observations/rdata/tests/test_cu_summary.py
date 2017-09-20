@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.cu_summary import cu_summary
 
 def test_cu_summary():

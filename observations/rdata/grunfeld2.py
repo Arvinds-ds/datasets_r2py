@@ -11,7 +11,8 @@ from observations.util import maybe_download_and_extract
 
 
 def grunfeld2(path):
-  """Simulation Data for model Seemingly Unrelated Regression (sur) that corresponds to method SUR of systemfit
+  """Simulation Data for model Seemingly Unrelated Regression (sur) that corres
+  ponds to method SUR of systemfit
 
   Dataframe contains 20 annual observations from 1935 to 1954 of 7
   variables for two firms General Electric and Westinghouse. Columns are
@@ -27,6 +28,7 @@ def grunfeld2(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `grunfeld2.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 20 rows and 7 columns and

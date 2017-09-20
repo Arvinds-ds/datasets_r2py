@@ -6,15 +6,14 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
-from observations.rdata.un_gdp_infant_mortality import un_gdp_infant_mortality
+from observations.rdata.gdp_infant_mortality import gdp_infant_mortality
 
-def test_un_gdp_infant_mortality():
-  """Test module un_gdp_infant_mortality.py by downloading un_gdp_infant_mortality.csv and testing shape of 
+def test_gdp_infant_mortality():
+  """Test module gdp_infant_mortality.py by downloading gdp_infant_mortality.csv and testing shape of 
     extracted data has 207 rows and 2 columns
   """
   test_path = tempfile.mkdtemp()
-  x_train, metadata = un_gdp_infant_mortality(test_path)
+  x_train, metadata = gdp_infant_mortality(test_path)
   try:
     assert x_train.shape == (207,2)
   except:

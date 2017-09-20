@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.life_cycle_savings import life_cycle_savings
 
 def test_life_cycle_savings():

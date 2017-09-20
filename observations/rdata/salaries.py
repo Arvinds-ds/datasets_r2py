@@ -46,6 +46,7 @@ def salaries(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `salaries.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 397 rows and 6 columns and

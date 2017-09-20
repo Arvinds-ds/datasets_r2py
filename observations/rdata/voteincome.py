@@ -11,7 +11,8 @@ from observations.util import maybe_download_and_extract
 
 
 def voteincome(path):
-  """Sample Turnout and Demographic Data from the 2000 Current Population Survey
+  """Sample Turnout and Demographic Data from the 2000 Current Population Surve
+  y
 
   This data set contains turnout and demographic data from a sample of
   respondents to the 2000 Current Population Survey (CPS). The states
@@ -56,6 +57,7 @@ def voteincome(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `voteincome.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 1500 rows and 7 columns and

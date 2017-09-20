@@ -11,7 +11,8 @@ from observations.util import maybe_download_and_extract
 
 
 def affect(path):
-  """Two data sets of affect and arousal scores as a function of personality and movie conditions
+  """Two data sets of affect and arousal scores as a function of personality an
+  d movie conditions
 
   A recurring question in the study of affect is the proper dimensionality
   and the relationship to various personality dimensions. Here is a data
@@ -27,6 +28,7 @@ def affect(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `affect.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 330 rows and 20 columns and

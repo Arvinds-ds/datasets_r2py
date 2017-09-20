@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.unemp_dur import unemp_dur
 
 def test_unemp_dur():

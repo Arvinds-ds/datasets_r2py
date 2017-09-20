@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.n_ox_emissions import n_ox_emissions
 
 def test_n_ox_emissions():

@@ -35,7 +35,7 @@ def edc_t(path):
       Temperature difference from the average of the last 1000 years ~
       -54.5degC
 
-  http://www.ncdc.noaa.gov/paleo/icecore/antarctica/domec/domec_epica_data.html
+http://www.ncdc.noaa.gov/paleo/icecore/antarctica/domec/domec_epica_data.html
 
   Args:
 
@@ -43,6 +43,7 @@ def edc_t(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `edc_t.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 5788 rows and 5 columns and

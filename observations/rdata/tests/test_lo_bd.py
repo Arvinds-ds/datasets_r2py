@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.lo_bd import lo_bd
 
 def test_lo_bd():

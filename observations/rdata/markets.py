@@ -38,7 +38,8 @@ def markets(path):
   Previous day's Nikkei change
 
   Dow Jones Industrial Average:
-  http://markets.cbsnews.com/cbsnews/quote/historical?Month=11&Symbol=310%3A998313&Year=2009&Range=12&tag=cbsnewsSectionsArea
+http://markets.cbsnews.com/cbsnews/quote/historical?Month=11&Symbol=310%3A998
+  313&Year=2009&Range=12&tag=cbsnewsSectionsArea
   Historical Nikkei 225 index:
 
   Args:
@@ -47,6 +48,7 @@ def markets(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `markets.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 56 rows and 5 columns and

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.ceosal2 import ceosal2
 
 def test_ceosal2():

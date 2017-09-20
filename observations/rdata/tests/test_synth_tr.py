@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.synth_tr import synth_tr
 
 def test_synth_tr():

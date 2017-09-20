@@ -38,6 +38,7 @@ def life_cycle_savings(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `life_cycle_savings.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 50 rows and 5 columns and

@@ -59,6 +59,7 @@ def tobacco(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `tobacco.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 2724 rows and 9 columns and

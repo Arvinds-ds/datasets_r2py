@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.mathpnl import mathpnl
 
 def test_mathpnl():

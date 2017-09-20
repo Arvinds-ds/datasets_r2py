@@ -130,6 +130,7 @@ def plant_traits(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `plant_traits.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 136 rows and 31 columns and

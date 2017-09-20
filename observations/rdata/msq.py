@@ -11,7 +11,8 @@ from observations.util import maybe_download_and_extract
 
 
 def msq(path):
-  """75 mood items from the Motivational State Questionnaire for 3896 participants
+  """75 mood items from the Motivational State Questionnaire for 3896 participa
+  nts
 
   Emotions may be described either as discrete emotions or in dimensional
   terms. The Motivational State Questionnaire (MSQ) was developed to study
@@ -313,6 +314,7 @@ def msq(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `msq.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 3896 rows and 92 columns and

@@ -11,7 +11,7 @@ from observations.util import maybe_download_and_extract
 
 
 def macdonell(path):
-  """Macdonell's Data on Height and Finger Length of Criminals, used by Gosset (1908)
+  """Macdonell's Data on Height and Finger Length of Criminals, Gosset (1908)
 
   In the second issue of *Biometrika*, W. R. Macdonell (1902) published an
   extensive paper, *On Criminal Anthropometry and the Identification of
@@ -68,6 +68,7 @@ def macdonell(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `macdonell.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 924 rows and 3 columns and

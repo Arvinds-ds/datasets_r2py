@@ -75,6 +75,7 @@ def cgd(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `cgd.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 203 rows and 16 columns and

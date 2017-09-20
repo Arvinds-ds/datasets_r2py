@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.mode_choice import mode_choice
 
 def test_mode_choice():

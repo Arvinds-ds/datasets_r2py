@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.ambient_noxch import ambient_noxch
 
 def test_ambient_noxch():

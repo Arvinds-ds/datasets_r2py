@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.warpbreaks import warpbreaks
 
 def test_warpbreaks():

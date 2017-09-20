@@ -11,7 +11,8 @@ from observations.util import maybe_download_and_extract
 
 
 def schmid(path):
-  """12 variables created by Schmid and Leiman to show the Schmid-Leiman Transformation
+  """12 variables created by Schmid and Leiman to show the Schmid-Leiman Transf
+  ormation
 
   John Schmid and John M. Leiman (1957) discuss how to transform a
   hierarchical factor structure to a bifactor structure. Schmid contains
@@ -33,6 +34,7 @@ def schmid(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `schmid.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 12 rows and 12 columns and

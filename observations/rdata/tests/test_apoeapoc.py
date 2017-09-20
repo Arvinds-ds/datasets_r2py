@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.apoeapoc import apoeapoc
 
 def test_apoeapoc():

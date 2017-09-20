@@ -64,6 +64,7 @@ def computers(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `computers.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 6259 rows and 10 columns and

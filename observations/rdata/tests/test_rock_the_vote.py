@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.rock_the_vote import rock_the_vote
 
 def test_rock_the_vote():

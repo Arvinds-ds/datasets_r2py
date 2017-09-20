@@ -69,6 +69,7 @@ def pollster08(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `pollster08.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 102 rows and 11 columns and

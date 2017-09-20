@@ -11,7 +11,8 @@ from observations.util import maybe_download_and_extract
 
 
 def within_between(path):
-  """An example of the distinction between within group and between group correlations
+  """An example of the distinction between within group and between group corre
+  lations
 
   A demonstration that a correlation may be decomposed to a within group
   correlation and a between group correlations and these two correlations
@@ -61,6 +62,7 @@ def within_between(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `within_between.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 16 rows and 10 columns and

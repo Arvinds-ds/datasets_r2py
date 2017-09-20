@@ -135,7 +135,8 @@ def crime4(path):
 
   -  clmix. lmix - lmix[t-1]
 
-  https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_
+  isbn_issn=9781111531041
 
   Args:
 
@@ -143,6 +144,7 @@ def crime4(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `crime4.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 630 rows and 59 columns and

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.income_inequality import income_inequality
 
 def test_income_inequality():

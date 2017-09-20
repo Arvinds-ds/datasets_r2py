@@ -65,6 +65,7 @@ def cancer(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `cancer.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 228 rows and 10 columns and

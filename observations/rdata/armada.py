@@ -66,7 +66,8 @@ def armada(path):
   de Falguerolles, A. (2008) L'analyse des donnees; before and around.
   *Journal Electronique d'Histoire des Probabilites et de la Statistique*,
   4 (2),
-  `www.jehps.net/Decembre2008/Falguerolles.pdf <www.jehps.net/Decembre2008/Falguerolles.pdf>`__
+`www.jehps.net/Decembre2008/Falguerolles.pdf <www.jehps.net/Decembre2008/Falg
+  uerolles.pdf>`__
 
   Args:
 
@@ -74,6 +75,7 @@ def armada(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `armada.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 10 rows and 11 columns and

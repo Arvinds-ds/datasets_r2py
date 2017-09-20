@@ -60,6 +60,7 @@ def pima_te(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `pima_te.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 332 rows and 8 columns and

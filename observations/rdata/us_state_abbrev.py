@@ -10,7 +10,7 @@ import sys
 from observations.util import maybe_download_and_extract
 
 
-def us_state_abbreviations(path):
+def us_state_abbrev(path):
   """Standard abbreviations for states of the United States
 
   The object returned by `readUSstateAbbreviations()` on May 20, 2013.
@@ -34,7 +34,8 @@ def us_state_abbreviations(path):
       by the US Postal Service (`USPS`).
 
   `the Wikipedia article on "List of U.S. state
-  abbreviations" <http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>`__
+abbreviations" <http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations
+  >`__
 
   See Also
   ~~~~~~~~
@@ -47,7 +48,8 @@ def us_state_abbreviations(path):
     path: str.
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
-      Filename is `us_state_abbreviations.csv`.
+      Filename is `us_state_abbrev.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 76 rows and 10 columns and
@@ -55,12 +57,12 @@ def us_state_abbreviations(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = 'us_state_abbreviations.csv'
+  filename = 'us_state_abbrev.csv'
   if not os.path.exists(os.path.join(path, filename)):
     url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
           '/Ecdat/USstateAbbreviations.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name='us_state_abbreviations.csv',
+                               save_file_name='us_state_abbrev.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -31,7 +31,8 @@ def phillips(path):
 
   -  cunem. unem - unem\_1
 
-  https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_
+  isbn_issn=9781111531041
 
   Args:
 
@@ -39,6 +40,7 @@ def phillips(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `phillips.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 56 rows and 7 columns and

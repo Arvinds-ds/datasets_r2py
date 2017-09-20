@@ -30,6 +30,14 @@ def morley(path):
   `Speed`
       Speed-of-light measurement.
 
+  Details
+  ~~~~~~~
+
+  The data is here viewed as a randomized block experiment with
+  ‘experiment’ and ‘run’ as the factors. ‘run’ may also be considered a
+  quantitative variate to account for linear (or polynomial) changes in
+  the measurement over the course of a single experiment.
+
   A. J. Weekes (1986) *A Genstat Primer*. London: Edward Arnold.
 
   S. M. Stigler (1977) Do robust estimators work with real data? *Annals
@@ -45,6 +53,7 @@ def morley(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `morley.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 100 rows and 3 columns and

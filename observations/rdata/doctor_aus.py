@@ -92,6 +92,7 @@ def doctor_aus(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `doctor_aus.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 5190 rows and 15 columns and

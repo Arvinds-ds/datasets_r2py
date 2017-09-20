@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.calcium_bp import calcium_bp
 
 def test_calcium_bp():

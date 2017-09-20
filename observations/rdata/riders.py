@@ -69,6 +69,7 @@ def riders(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `riders.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 90 rows and 12 columns and

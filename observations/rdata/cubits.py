@@ -11,7 +11,8 @@ from observations.util import maybe_download_and_extract
 
 
 def cubits(path):
-  """Galton's example of the relationship between height and 'cubit' or forearm length
+  """Galton's example of the relationship between height and 'cubit' or forearm
+   length
 
   Francis Galton introduced the 'co-relation' in 1888 with a paper
   discussing how to measure the relationship between two variables. His
@@ -56,6 +57,7 @@ def cubits(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `cubits.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 9 rows and 8 columns and

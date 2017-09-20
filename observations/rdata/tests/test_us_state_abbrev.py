@@ -6,15 +6,14 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
-from observations.rdata.us_state_abbreviations import us_state_abbreviations
+from observations.rdata.us_state_abbrev import us_state_abbrev
 
-def test_us_state_abbreviations():
-  """Test module us_state_abbreviations.py by downloading us_state_abbreviations.csv and testing shape of 
+def test_us_state_abbrev():
+  """Test module us_state_abbrev.py by downloading us_state_abbrev.csv and testing shape of 
     extracted data has 76 rows and 10 columns
   """
   test_path = tempfile.mkdtemp()
-  x_train, metadata = us_state_abbreviations(test_path)
+  x_train, metadata = us_state_abbrev(test_path)
   try:
     assert x_train.shape == (76,10)
   except:

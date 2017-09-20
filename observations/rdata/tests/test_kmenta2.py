@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.kmenta2 import kmenta2
 
 def test_kmenta2():

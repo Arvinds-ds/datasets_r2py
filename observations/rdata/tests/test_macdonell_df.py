@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.macdonell_df import macdonell_df
 
 def test_macdonell_df():

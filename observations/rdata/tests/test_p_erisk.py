@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.p_erisk import p_erisk
 
 def test_p_erisk():

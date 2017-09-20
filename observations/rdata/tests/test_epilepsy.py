@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.epilepsy import epilepsy
 
 def test_epilepsy():

@@ -11,7 +11,8 @@ from observations.util import maybe_download_and_extract
 
 
 def gleser(path):
-  """Example data from Gleser, Cronbach and Rajaratnam (1965) to show basic principles of generalizability theory.
+  """Example data from Gleser, Cronbach and Rajaratnam (1965) to show basic pri
+  nciples of generalizability theory.
 
   Gleser, Cronbach and Rajaratnam (1965) discuss the estimation of
   variance components and their ratios as part of their introduction to
@@ -70,6 +71,7 @@ def gleser(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `gleser.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 12 rows and 12 columns and

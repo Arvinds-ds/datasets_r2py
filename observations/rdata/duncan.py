@@ -44,6 +44,7 @@ def duncan(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `duncan.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 45 rows and 4 columns and

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.lost_letter import lost_letter
 
 def test_lost_letter():

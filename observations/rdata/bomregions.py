@@ -96,7 +96,7 @@ def bomregions(path):
   http://cdiac.ornl.gov/trends/co2/lawdome.html.
 
   The CO2 series `co2mlo` is from Dr. Pieter Tans, NOAA/ESRL
-  (`www.esrl.noaa.gov/gmd/ccgg/trends/ <www.esrl.noaa.gov/gmd/ccgg/trends/>`__)
+(`www.esrl.noaa.gov/gmd/ccgg/trends/ <www.esrl.noaa.gov/gmd/ccgg/trends/>`__)
 
   The series `CO2` is a composite series, obtained by adding 0.46 to he
   Law data for 1900 to 1958, then following this with the Moana Loa data
@@ -111,6 +111,7 @@ def bomregions(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `bomregions.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 109 rows and 22 columns and

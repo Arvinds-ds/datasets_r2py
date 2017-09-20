@@ -65,6 +65,7 @@ def n_f_l2007_standings(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `n_f_l2007_standings.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 32 rows and 10 columns and

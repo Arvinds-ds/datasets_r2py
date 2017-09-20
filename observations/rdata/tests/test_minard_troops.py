@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.minard_troops import minard_troops
 
 def test_minard_troops():

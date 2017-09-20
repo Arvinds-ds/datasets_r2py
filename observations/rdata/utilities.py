@@ -55,6 +55,7 @@ def utilities(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `utilities.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 117 rows and 12 columns and

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.hotspots2006 import hotspots2006
 
 def test_hotspots2006():

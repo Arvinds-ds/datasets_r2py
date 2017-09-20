@@ -40,6 +40,7 @@ def quakes(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `quakes.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 1000 rows and 5 columns and

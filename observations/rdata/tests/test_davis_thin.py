@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.davis_thin import davis_thin
 
 def test_davis_thin():

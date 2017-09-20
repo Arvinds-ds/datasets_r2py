@@ -54,6 +54,7 @@ def sum_hes(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `sum_hes.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 3250 rows and 7 columns and

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.snow_gr import snow_gr
 
 def test_snow_gr():

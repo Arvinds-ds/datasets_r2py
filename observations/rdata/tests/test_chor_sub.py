@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.chor_sub import chor_sub
 
 def test_chor_sub():

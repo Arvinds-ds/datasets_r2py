@@ -51,6 +51,7 @@ def rail_trail(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `rail_trail.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 90 rows and 10 columns and

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.aulatlong import aulatlong
 
 def test_aulatlong():

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.yeast_d_mat import yeast_d_mat
 
 def test_yeast_d_mat():

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.boundsdata import boundsdata
 
 def test_boundsdata():

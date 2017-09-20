@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.cobar_ore import cobar_ore
 
 def test_cobar_ore():

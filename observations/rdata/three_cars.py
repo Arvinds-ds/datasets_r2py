@@ -57,6 +57,7 @@ def three_cars(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `three_cars.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 90 rows and 8 columns and

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.wagner_growth import wagner_growth
 
 def test_wagner_growth():

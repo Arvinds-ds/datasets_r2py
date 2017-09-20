@@ -25,21 +25,6 @@ def melanoma(path):
   incidence
       Rate of melanoma cancer per 100,000 population.
 
-  Note
-  ~~~~
-
-  This dataset is not related to the `melanoma` dataset in the **boot**
-  package with the same name.
-
-  The S-PLUS 6.2 help for the melanoma data says that the incidence rate
-  is per *million*, but this is not consistent with data found at the
-  National Cancer Institute (http://www.nci.nih.gov).
-
-  Author(s)
-  ~~~~~~~~~
-
-  Documentation contributed by Kevin Wright.
-
   Houghton, A., E. W. Munster, and M. V. Viola. (1978). Increased
   Incidence of Malignant Melanoma After Peaks of Sunspot Activity. *The
   Lancet*, **8**, 759–760.
@@ -50,6 +35,7 @@ def melanoma(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `melanoma.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 37 rows and 2 columns and

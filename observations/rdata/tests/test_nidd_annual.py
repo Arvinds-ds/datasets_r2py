@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.nidd_annual import nidd_annual
 
 def test_nidd_annual():

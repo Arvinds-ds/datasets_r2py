@@ -71,7 +71,7 @@ def crohn(path):
       519962   IGR2225a_1 *
       520521   IGR2226a_3 *
       522600   IGR2230a_1 *
-      525243   IGR2236a_1 *   
+      525243   IGR2236a_1 *
       529556   IGR2244a_4 *
       532363   IGR2250a_4 *
       545062   IGR2276a_1 *
@@ -145,6 +145,7 @@ def crohn(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `crohn.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 387 rows and 212 columns and

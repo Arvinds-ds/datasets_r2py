@@ -90,6 +90,7 @@ def patents_hgh(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `patents_hgh.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 1730 rows and 18 columns and

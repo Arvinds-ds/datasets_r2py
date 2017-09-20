@@ -40,6 +40,7 @@ def blackmore(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `blackmore.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 945 rows and 4 columns and

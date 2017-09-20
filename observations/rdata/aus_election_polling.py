@@ -10,7 +10,7 @@ import sys
 from observations.util import maybe_download_and_extract
 
 
-def australian_election_polling(path):
+def aus_election_polling(path):
   """Political opinion polls in Australia, 2004-07
 
   The results of 239 published opinion polls measuring vote intentions
@@ -81,7 +81,8 @@ def australian_election_polling(path):
     path: str.
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
-      Filename is `australian_election_polling.csv`.
+      Filename is `aus_election_polling.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 239 rows and 14 columns and
@@ -89,12 +90,12 @@ def australian_election_polling(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = 'australian_election_polling.csv'
+  filename = 'aus_election_polling.csv'
   if not os.path.exists(os.path.join(path, filename)):
     url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
           '/pscl/AustralianElectionPolling.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name='australian_election_polling.csv',
+                               save_file_name='aus_election_polling.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -10,7 +10,7 @@ import sys
 from observations.util import maybe_download_and_extract
 
 
-def us_classified_documents(path):
+def us_classified_docs(path):
   """Official Secrecy of the United States Government
 
   Data on classification activity of the United States government.
@@ -57,7 +57,8 @@ def us_classified_documents(path):
     path: str.
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
-      Filename is `us_classified_documents.csv`.
+      Filename is `us_classified_docs.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 29 rows and 5 columns and
@@ -65,12 +66,12 @@ def us_classified_documents(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = 'us_classified_documents.csv'
+  filename = 'us_classified_docs.csv'
   if not os.path.exists(os.path.join(path, filename)):
     url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
           '/Ecdat/USclassifiedDocuments.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name='us_classified_documents.csv',
+                               save_file_name='us_classified_docs.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

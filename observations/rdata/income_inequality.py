@@ -73,7 +73,8 @@ def income_inequality(path):
 
   United States Census Bureau, Table F-1. Income Limits for Each Fifth and
   Top 5 Percent of Families, All Races,
-  http://www.census.gov/data/tables/time-series/demo/income-poverty/historical-income-inequality.html,
+http://www.census.gov/data/tables/time-series/demo/income-poverty/historical-
+  income-inequality.html,
   accessed 2016-12-09.
 
   Thomas Piketty and Emmanuel Saez (2003) "Income Inequality in the United
@@ -90,6 +91,7 @@ def income_inequality(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `income_inequality.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 66 rows and 22 columns and

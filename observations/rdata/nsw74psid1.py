@@ -60,6 +60,7 @@ def nsw74psid1(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `nsw74psid1.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 2675 rows and 10 columns and

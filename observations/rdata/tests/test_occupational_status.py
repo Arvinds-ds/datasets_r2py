@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.occupational_status import occupational_status
 
 def test_occupational_status():

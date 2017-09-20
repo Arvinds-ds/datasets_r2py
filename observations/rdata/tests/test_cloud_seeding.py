@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.cloud_seeding import cloud_seeding
 
 def test_cloud_seeding():

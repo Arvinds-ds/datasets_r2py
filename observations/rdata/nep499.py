@@ -30,6 +30,7 @@ def nep499(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `nep499.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 499 rows and 23 columns and

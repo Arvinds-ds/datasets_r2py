@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.cuckoohosts import cuckoohosts
 
 def test_cuckoohosts():

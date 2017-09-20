@@ -11,7 +11,8 @@ from observations.util import maybe_download_and_extract
 
 
 def lo_bd(path):
-  """Cancer drug data use to provide an example of the use of the skew power distributions.
+  """Cancer drug data use to provide an example of the use of the skew power di
+  stributions.
 
   A portion of an experiment to determine the limit of blank/limit of
   detection in a biochemical assay.
@@ -65,6 +66,7 @@ def lo_bd(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `lo_bd.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 84 rows and 9 columns and

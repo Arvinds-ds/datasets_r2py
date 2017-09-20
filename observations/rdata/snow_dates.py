@@ -118,6 +118,7 @@ def snow_dates(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `snow_dates.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 44 rows and 3 columns and

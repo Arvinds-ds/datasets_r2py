@@ -53,10 +53,12 @@ def us_tax_words(path):
 
   `Tax Foundation: Number of Words in Internal Revenue Code and Federal
   Tax Regulations,
-  1955-2005 <http://taxfoundation.org/article/number-words-internal-revenue-code-and-federal-tax-regulations-1955-2005>`__
+1955-2005 <http://taxfoundation.org/article/number-words-internal-revenue-cod
+  e-and-federal-tax-regulations-1955-2005>`__
   Scott Greenberg, `"Federal Tax Laws and Regulations are Now Over 10
   Million Words Long", October 08,
-  2015 <http://taxfoundation.org/blog/federal-tax-laws-and-regulations-are-now-over-10-million-words-long>`__
+2015 <http://taxfoundation.org/blog/federal-tax-laws-and-regulations-are-now-
+  over-10-million-words-long>`__
 
   Args:
 
@@ -64,6 +66,7 @@ def us_tax_words(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `us_tax_words.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 7 rows and 10 columns and

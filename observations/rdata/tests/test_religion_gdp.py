@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.religion_gdp import religion_gdp
 
 def test_religion_gdp():

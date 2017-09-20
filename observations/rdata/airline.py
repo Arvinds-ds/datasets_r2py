@@ -47,6 +47,7 @@ def airline(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `airline.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 90 rows and 6 columns and

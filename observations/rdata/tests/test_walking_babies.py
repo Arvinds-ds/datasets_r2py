@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.walking_babies import walking_babies
 
 def test_walking_babies():

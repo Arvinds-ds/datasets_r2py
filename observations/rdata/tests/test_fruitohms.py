@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.fruitohms import fruitohms
 
 def test_fruitohms():

@@ -10,7 +10,7 @@ import sys
 from observations.util import maybe_download_and_extract
 
 
-def political_information(path):
+def political_info(path):
   """Interviewer ratings of respondent levels of political information
 
   Interviewers administering the 2000 American National Election Studies
@@ -53,7 +53,8 @@ def political_information(path):
     path: str.
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
-      Filename is `political_information.csv`.
+      Filename is `political_info.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 1807 rows and 8 columns and
@@ -61,12 +62,12 @@ def political_information(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = 'political_information.csv'
+  filename = 'political_info.csv'
   if not os.path.exists(os.path.join(path, filename)):
     url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
           '/pscl/politicalInformation.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name='political_information.csv',
+                               save_file_name='political_info.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

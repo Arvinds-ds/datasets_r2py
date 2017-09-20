@@ -65,7 +65,8 @@ def fertil3(path):
 
   -  gfr\_2. gfr[\_n-2]
 
-  https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_
+  isbn_issn=9781111531041
 
   Args:
 
@@ -73,6 +74,7 @@ def fertil3(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `fertil3.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 72 rows and 24 columns and

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.friend_foe import friend_foe
 
 def test_friend_foe():

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.weldon_dice import weldon_dice
 
 def test_weldon_dice():

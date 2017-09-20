@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.child_speaks import child_speaks
 
 def test_child_speaks():

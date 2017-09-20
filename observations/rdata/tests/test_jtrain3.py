@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.jtrain3 import jtrain3
 
 def test_jtrain3():

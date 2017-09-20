@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.nswpsid1 import nswpsid1
 
 def test_nswpsid1():

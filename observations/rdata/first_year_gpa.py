@@ -67,6 +67,7 @@ def first_year_gpa(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `first_year_gpa.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 219 rows and 10 columns and

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.luv_colours import luv_colours
 
 def test_luv_colours():

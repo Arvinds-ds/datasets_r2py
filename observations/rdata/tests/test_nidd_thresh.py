@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.nidd_thresh import nidd_thresh
 
 def test_nidd_thresh():

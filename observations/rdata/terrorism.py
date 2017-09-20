@@ -20,7 +20,8 @@ def terrorism(path):
 
   `terrorism` provides a few summary statistics along with an
   `ordered` factor `methodology`, which `Pape et
-  al. <https://www.washingtonpost.com/news/monkey-cage/wp/2014/08/11/how-to-fix-the-flaws-in-the-global-terrorism-database-and-why-it-matters/>`__
+al. <https://www.washingtonpost.com/news/monkey-cage/wp/2014/08/11/how-to-fix
+  -the-flaws-in-the-global-terrorism-database-and-why-it-matters/>`__
   insisted is necessary, because an increase of over 70 percent in suicide
   terrorism between 2007 and 2013 is best explained by a methodology
   change in GTD that occurred on 2011-11-01; Pape's own `Suicide Attack
@@ -76,7 +77,8 @@ def terrorism(path):
       integer number of incidents classified as "suicide" by GTD variable
       `suicide` = 1. For 2007, this is 359, the number reported by `Pape
       et
-      al. <https://www.washingtonpost.com/news/monkey-cage/wp/2014/08/11/how-to-fix-the-flaws-in-the-global-terrorism-database-and-why-it-matters/>`__
+    al. <https://www.washingtonpost.com/news/monkey-cage/wp/2014/08/11/how-to
+  -fix-the-flaws-in-the-global-terrorism-database-and-why-it-matters/>`__
       For 2013, it is 624, which is 5 more than the 619 mentioned by Pape
       et al. Without checking with the SMART project administrators, one
       might suspect that 5 more suicide incidents from 2013 were found
@@ -138,7 +140,8 @@ def terrorism(path):
       includes USdeathRate for each year from 1900 to 2014.
 
       The WorldDeathRate here were read manually from a plot on `that web
-      page, <http://data.worldbank.org/indicator/SP.DYN.CDRT.IN?end=2014&start=1960&view=chart>`__
+    page, <http://data.worldbank.org/indicator/SP.DYN.CDRT.IN?end=2014&start=
+  1960&view=chart>`__
       except for the the number for 2015, which was estimated as a
       reduction of 0.73 percent from 2014, which was the average rate of
       decline (ratio of two successive years) for 1990 to 2014. The same
@@ -175,7 +178,8 @@ def terrorism(path):
   Database <https://en.wikipedia.org/wiki/Global_Terrorism_Database>`__
   maintained by the `National Consortium for the Study of Terrorism and
   Responses to
-  Terrorism <https://en.wikipedia.org/wiki/National_Consortium_for_the_Study_of_Terrorism_and_Responses_to_Terrorism>`__
+Terrorism <https://en.wikipedia.org/wiki/National_Consortium_for_the_Study_of
+  _Terrorism_and_Responses_to_Terrorism>`__
   (START, 2015), `downloaded 2015-11-28 <http://www.start.umd.edu/gtd>`__.
 
   The world and US population figures came from `"Total Population - Both
@@ -198,6 +202,7 @@ def terrorism(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `terrorism.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 46 rows and 25 columns and

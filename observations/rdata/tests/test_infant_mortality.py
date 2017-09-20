@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.infant_mortality import infant_mortality
 
 def test_infant_mortality():

@@ -38,21 +38,6 @@ def grunfeld1(path):
   capital
       stock of plant and equipment
 
-  Note
-  ~~~~
-
-  The Grunfeld data as provided in package `plm` is the same data as
-  used in Baltagi (2001), see **Examples** below.
-
-  | NB:
-  | Various versions of the Grunfeld data circulate online. Also, various
-    text books (and also varying among editions) and papers use different
-    subsets of the original Grunfeld data, some of which contain errors in
-    a few data points compared to the original data used by Grunfeld
-    (1958) in his PhD thesis. See Kleiber/Zeileis (2010) and its
-    accompanying website for a comparison of various Grunfeld data sets in
-    use.
-
   Online complements to Baltagi (2001):
 
   http://www.wiley.com/legacy/wileychi/baltagi/
@@ -60,7 +45,8 @@ def grunfeld1(path):
 
   Online complements to Baltagi (2013):
 
-  http://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=1118672321&resourceId=13452
+http://bcs.wiley.com/he-bcs/Books?action=resource&bcsId=4338&itemId=111867232
+  1&resourceId=13452
 
   Args:
 
@@ -68,6 +54,7 @@ def grunfeld1(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `grunfeld1.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 200 rows and 5 columns and

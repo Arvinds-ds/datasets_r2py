@@ -53,6 +53,7 @@ def science(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `science.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 1385 rows and 7 columns and

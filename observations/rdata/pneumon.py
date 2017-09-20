@@ -72,6 +72,7 @@ def pneumon(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `pneumon.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 3470 rows and 15 columns and

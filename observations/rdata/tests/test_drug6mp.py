@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.drug6mp import drug6mp
 
 def test_drug6mp():

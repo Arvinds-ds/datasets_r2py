@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.wheat_monarchs import wheat_monarchs
 
 def test_wheat_monarchs():

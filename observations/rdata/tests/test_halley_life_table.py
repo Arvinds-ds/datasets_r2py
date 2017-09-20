@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.halley_life_table import halley_life_table
 
 def test_halley_life_table():

@@ -10,43 +10,38 @@ import sys
 from observations.util import maybe_download_and_extract
 
 
-def weight_loss_incentive7(path):
-  """WeightLossIncentive7
+def us_personal_expend(path):
+  """Personal Expenditure Data
 
-  Weight loss after seven months with/without a financial incentive
+  This data set consists of United States personal expenditures (in
+  billions of dollars) in the categories; food and tobacco, household
+  operation, medical and health, personal care, and private education for
+  the years 1940, 1945, 1950, 1955 and 1960.
 
-  A dataset with 33 observations on the following 2 variables.
+  A matrix with 5 rows and 5 columns.
 
-  `Group`
-
-  Treatment group: `Control` or `Incentive`
-
-  `Month7Loss`
-
-  Weight loss (in pounds) after seven months
-
-  “Financial incentive-based approaches for weight loss," Journal of the
-  American Medical Association by Volpp, John, Troxel, et. al., Vol. 200,
+  The World Almanac and Book of Facts, 1962, page 756.
 
   Args:
 
     path: str.
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
-      Filename is `weight_loss_incentive7.csv`.
+      Filename is `us_personal_expend.csv`.
+
   Returns:
 
-    Tuple of np.ndarray `x_train` with 33 rows and 2 columns and
+    Tuple of np.ndarray `x_train` with 5 rows and 5 columns and
     dictionary `metadata` of column headers (feature names).
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = 'weight_loss_incentive7.csv'
+  filename = 'us_personal_expend.csv'
   if not os.path.exists(os.path.join(path, filename)):
     url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
-          '/Stat2Data/WeightLossIncentive7.csv'
+          '/datasets/USPersonalExpenditure.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name='weight_loss_incentive7.csv',
+                               save_file_name='us_personal_expend.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

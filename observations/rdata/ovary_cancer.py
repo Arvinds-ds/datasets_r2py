@@ -44,6 +44,7 @@ def ovary_cancer(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `ovary_cancer.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 16 rows and 5 columns and

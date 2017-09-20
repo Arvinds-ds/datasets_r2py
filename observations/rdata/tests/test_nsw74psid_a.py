@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.nsw74psid_a import nsw74psid_a
 
 def test_nsw74psid_a():

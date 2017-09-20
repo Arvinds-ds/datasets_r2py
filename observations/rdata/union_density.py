@@ -59,6 +59,7 @@ def union_density(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `union_density.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 20 rows and 4 columns and

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.slp75_81 import slp75_81
 
 def test_slp75_81():

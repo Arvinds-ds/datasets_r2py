@@ -51,6 +51,7 @@ def alcohol(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `alcohol.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 9822 rows and 33 columns and

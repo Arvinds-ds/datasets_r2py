@@ -27,7 +27,8 @@ def corn(path):
 
   -  soypix. soy pixels per hectare
 
-  https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_
+  isbn_issn=9781111531041
 
   Args:
 
@@ -35,6 +36,7 @@ def corn(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `corn.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 37 rows and 5 columns and

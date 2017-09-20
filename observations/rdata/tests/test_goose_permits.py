@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.goose_permits import goose_permits
 
 def test_goose_permits():

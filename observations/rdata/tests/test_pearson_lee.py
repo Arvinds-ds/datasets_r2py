@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.pearson_lee import pearson_lee
 
 def test_pearson_lee():

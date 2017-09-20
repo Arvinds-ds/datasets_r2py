@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.azdrg112 import azdrg112
 
 def test_azdrg112():

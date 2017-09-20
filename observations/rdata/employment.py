@@ -39,6 +39,7 @@ def employment(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `employment.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 24 rows and 4 columns and

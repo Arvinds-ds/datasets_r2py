@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.political_knowledge import political_knowledge
 
 def test_political_knowledge():

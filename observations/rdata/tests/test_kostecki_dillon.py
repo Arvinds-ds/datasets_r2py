@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.kostecki_dillon import kostecki_dillon
 
 def test_kostecki_dillon():

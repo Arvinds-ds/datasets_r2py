@@ -35,6 +35,7 @@ def koch(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `koch.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 288 rows and 4 columns and

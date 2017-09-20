@@ -35,18 +35,13 @@ def geyser(path):
 
   Waiting time for this eruption
 
-  Note
-  ~~~~
-
-  The `waiting` time was incorrectly described as the time to the next
-  eruption in the original files, and corrected for MASS version 7.3-30.
-
   Args:
 
     path: str.
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `geyser.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 299 rows and 2 columns and

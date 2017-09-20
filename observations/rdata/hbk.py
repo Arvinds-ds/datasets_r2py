@@ -36,11 +36,6 @@ def hbk(path):
   Y
       y
 
-  Note
-  ~~~~
-
-  This data set is also available in package wle as `artificial`.
-
   Hawkins, D.M., Bradu, D., and Kass, G.V. (1984) Location of several
   outliers in multiple regression data using elemental sets.
   *Technometrics* **26**, 197–208.
@@ -54,6 +49,7 @@ def hbk(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `hbk.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 75 rows and 4 columns and

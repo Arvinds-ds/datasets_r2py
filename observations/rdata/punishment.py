@@ -36,12 +36,6 @@ def punishment(path):
   age
       factor indicating age group in years (15-24, 25-39, 40-).
 
-  Note
-  ~~~~
-
-  Anderson (1991) erroneously indicates the total sum of respondents to be
-  783.
-
   E. B. Andersen (1991), The Statistical Analysis of Categorical Data,
   pages 207–208.
 
@@ -51,6 +45,7 @@ def punishment(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `punishment.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 36 rows and 5 columns and

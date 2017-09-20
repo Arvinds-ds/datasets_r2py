@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.non_english_names import non_english_names
 
 def test_non_english_names():

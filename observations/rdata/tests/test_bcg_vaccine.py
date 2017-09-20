@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.bcg_vaccine import bcg_vaccine
 
 def test_bcg_vaccine():

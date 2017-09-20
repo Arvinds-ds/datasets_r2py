@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.grunfeld2 import grunfeld2
 
 def test_grunfeld2():

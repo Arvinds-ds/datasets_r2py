@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.weight_loss import weight_loss
 
 def test_weight_loss():

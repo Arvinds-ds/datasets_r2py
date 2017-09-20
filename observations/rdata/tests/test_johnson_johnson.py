@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.johnson_johnson import johnson_johnson
 
 def test_johnson_johnson():

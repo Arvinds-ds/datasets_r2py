@@ -33,6 +33,7 @@ def calcium_bp(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `calcium_bp.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 21 rows and 2 columns and

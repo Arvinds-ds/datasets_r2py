@@ -70,6 +70,7 @@ def rwm1984(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `rwm1984.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 3874 rows and 15 columns and

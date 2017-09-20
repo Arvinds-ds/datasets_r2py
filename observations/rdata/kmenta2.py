@@ -11,7 +11,8 @@ from observations.util import maybe_download_and_extract
 
 
 def kmenta2(path):
-  """Simulation Data for model Three-Stage Least Square (threesls) that corresponds to method 3SLS of systemfit
+  """Simulation Data for model Three-Stage Least Square (threesls) that corresp
+  onds to method 3SLS of systemfit
 
   Dataframe contains 20 annual observations of a supply/demand model with
   5 variables. Columns are q=Food consumption per capita, p=Ratio of food
@@ -27,6 +28,7 @@ def kmenta2(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `kmenta2.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 20 rows and 5 columns and

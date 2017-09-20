@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.mendel_abc import mendel_abc
 
 def test_mendel_abc():

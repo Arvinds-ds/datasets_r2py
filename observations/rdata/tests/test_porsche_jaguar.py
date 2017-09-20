@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.porsche_jaguar import porsche_jaguar
 
 def test_porsche_jaguar():

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.efron_morris import efron_morris
 
 def test_efron_morris():

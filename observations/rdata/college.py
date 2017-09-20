@@ -83,6 +83,7 @@ def college(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `college.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 777 rows and 18 columns and

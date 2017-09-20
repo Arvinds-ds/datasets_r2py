@@ -23,6 +23,7 @@ def nidd_annual(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `nidd_annual.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 35 rows and 1 columns and

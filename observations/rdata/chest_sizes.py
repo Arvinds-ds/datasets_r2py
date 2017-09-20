@@ -36,6 +36,7 @@ def chest_sizes(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `chest_sizes.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 16 rows and 2 columns and

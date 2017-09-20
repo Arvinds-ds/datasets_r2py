@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.downs_bc import downs_bc
 
 def test_downs_bc():

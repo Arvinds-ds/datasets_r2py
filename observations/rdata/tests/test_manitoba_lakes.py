@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.manitoba_lakes import manitoba_lakes
 
 def test_manitoba_lakes():

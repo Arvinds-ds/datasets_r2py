@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.biomass_till import biomass_till
 
 def test_biomass_till():

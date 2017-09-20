@@ -62,6 +62,7 @@ def tinting(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `tinting.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 182 rows and 9 columns and

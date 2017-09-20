@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.chest_sizes import chest_sizes
 
 def test_chest_sizes():

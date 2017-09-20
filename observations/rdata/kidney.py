@@ -51,12 +51,6 @@ def kidney(path):
 
   frailty estimate from original paper
 
-  Note
-  ~~~~
-
-  The original paper ignored the issue of tied times and so is not exactly
-  reproduced by the survival package.
-
   CA McGilchrist, CW Aisbett (1991), Regression with frailty in survival
   analysis. *Biometrics* **47**, 461–66.
 
@@ -66,6 +60,7 @@ def kidney(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `kidney.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 76 rows and 7 columns and

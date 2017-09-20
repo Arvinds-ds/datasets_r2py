@@ -65,7 +65,8 @@ def consump(path):
 
   -  lc\_ly\_2. lc\_ly[\_n-2]
 
-  https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_
+  isbn_issn=9781111531041
 
   Args:
 
@@ -73,6 +74,7 @@ def consump(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `consump.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 37 rows and 24 columns and

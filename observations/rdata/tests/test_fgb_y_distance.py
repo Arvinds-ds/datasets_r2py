@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.fgb_y_distance import fgb_y_distance
 
 def test_fgb_y_distance():

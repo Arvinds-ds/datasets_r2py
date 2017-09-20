@@ -74,6 +74,7 @@ def hi_hours_worked(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `hi_hours_worked.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 22272 rows and 13 columns and

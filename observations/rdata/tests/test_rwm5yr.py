@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.rwm5yr import rwm5yr
 
 def test_rwm5yr():

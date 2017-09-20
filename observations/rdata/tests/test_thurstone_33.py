@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.thurstone_33 import thurstone_33
 
 def test_thurstone_33():

@@ -55,6 +55,7 @@ def fishing(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `fishing.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 147 rows and 7 columns and

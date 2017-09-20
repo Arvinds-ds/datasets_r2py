@@ -18,13 +18,13 @@ def warpbreaks(path):
 
   A data frame with 54 observations on 3 variables.
 
-  +------------+---------------+-----------+----------------------------------+
-  | `[,1]`   | `breaks`    | numeric   | The number of breaks             |
-  +------------+---------------+-----------+----------------------------------+
-  | `[,2]`   | `wool`      | factor    | The type of wool (A or B)        |
-  +------------+---------------+-----------+----------------------------------+
-  | `[,3]`   | `tension`   | factor    | The level of tension (L, M, H)   |
-  +------------+---------------+-----------+----------------------------------+
++------------+---------------+-----------+----------------------------------+
+| `[,1]`   | `breaks`    | numeric   | The number of breaks             |
++------------+---------------+-----------+----------------------------------+
+| `[,2]`   | `wool`      | factor    | The type of wool (A or B)        |
++------------+---------------+-----------+----------------------------------+
+| `[,3]`   | `tension`   | factor    | The level of tension (L, M, H)   |
++------------+---------------+-----------+----------------------------------+
 
   There are measurements on 9 looms for each of the six types of warp
   (`AL`, `AM`, `AH`, `BL`, `BM`, `BH`).
@@ -38,6 +38,7 @@ def warpbreaks(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `warpbreaks.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 54 rows and 3 columns and

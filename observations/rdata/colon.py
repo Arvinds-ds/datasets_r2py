@@ -84,20 +84,13 @@ def colon(path):
 
   event type: 1=recurrence,2=death
 
-  Note
-  ~~~~
-
-  The study is originally described in Laurie (1989). The main report is
-  found in Moertel (1990). This data set is closest to that of the final
-  report in Moertel (1991). A version of the data with less follow-up time
-  was used in the paper by Lin (1994).
-
   Args:
 
     path: str.
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `colon.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 1858 rows and 16 columns and

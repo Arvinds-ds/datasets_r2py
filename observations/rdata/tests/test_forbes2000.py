@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.forbes2000 import forbes2000
 
 def test_forbes2000():

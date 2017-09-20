@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.oddbooks import oddbooks
 
 def test_oddbooks():

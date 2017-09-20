@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.leafshape17 import leafshape17
 
 def test_leafshape17():

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.us_tax_words import us_tax_words
 
 def test_us_tax_words():

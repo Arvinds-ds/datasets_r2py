@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.sp500_w90 import sp500_w90
 
 def test_sp500_w90():

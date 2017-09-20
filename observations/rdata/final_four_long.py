@@ -37,6 +37,7 @@ def final_four_long(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `final_four_long.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 2048 rows and 3 columns and

@@ -47,6 +47,7 @@ def ams_survey(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `ams_survey.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 24 rows and 5 columns and

@@ -35,11 +35,6 @@ def beav1(path):
   `activ`
       Indicator of activity outside the retreat.
 
-  Note
-  ~~~~
-
-  The observation at 22:20 is missing.
-
   P. S. Reynolds (1994) Time-series analyses of beaver body temperatures.
   Chapter 11 of Lange, N., Ryan, L., Billard, L., Brillinger, D.,
   Conquest, L. and Greenhouse, J. eds (1994) *Case Studies in Biometry.*
@@ -51,6 +46,7 @@ def beav1(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `beav1.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 114 rows and 4 columns and

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.bechtoldt_2 import bechtoldt_2
 
 def test_bechtoldt_2():

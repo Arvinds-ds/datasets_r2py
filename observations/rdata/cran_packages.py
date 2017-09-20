@@ -23,9 +23,11 @@ def cran_packages(path):
   Version
       an ordered factor of the R version number primarily in use at the
       time. This was taken from archives of the major releases at
-      https://svn.r-project.org/R/branches/R-1-3-patches/tests/internet.Rout.save,
+    https://svn.r-project.org/R/branches/R-1-3-patches/tests/internet.Rout.sa
+  ve,
       ...
-      https://svn.r-project.org/R/branches/R-3-1-branch/tests/internet.Rout.save
+    https://svn.r-project.org/R/branches/R-3-1-branch/tests/internet.Rout.sav
+  e
 
   Date
       an object of class `Date` giving the date on which the count of
@@ -49,6 +51,7 @@ def cran_packages(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `cran_packages.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 29 rows and 4 columns and

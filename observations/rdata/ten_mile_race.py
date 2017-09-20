@@ -40,6 +40,7 @@ def ten_mile_race(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `ten_mile_race.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 8636 rows and 5 columns and

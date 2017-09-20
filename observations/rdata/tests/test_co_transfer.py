@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.co_transfer import co_transfer
 
 def test_co_transfer():

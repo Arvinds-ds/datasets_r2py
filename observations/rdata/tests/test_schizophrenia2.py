@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.schizophrenia2 import schizophrenia2
 
 def test_schizophrenia2():

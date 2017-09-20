@@ -35,6 +35,7 @@ def capability(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `capability.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 75 rows and 1 columns and

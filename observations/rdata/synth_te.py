@@ -40,6 +40,7 @@ def synth_te(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `synth_te.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 1000 rows and 3 columns and

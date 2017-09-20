@@ -6,15 +6,14 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
-from observations.rdata.political_information import political_information
+from observations.rdata.political_info import political_info
 
-def test_political_information():
-  """Test module political_information.py by downloading political_information.csv and testing shape of 
+def test_political_info():
+  """Test module political_info.py by downloading political_info.csv and testing shape of 
     extracted data has 1807 rows and 8 columns
   """
   test_path = tempfile.mkdtemp()
-  x_train, metadata = political_information(test_path)
+  x_train, metadata = political_info(test_path)
   try:
     assert x_train.shape == (1807,8)
   except:

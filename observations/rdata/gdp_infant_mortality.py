@@ -10,7 +10,7 @@ import sys
 from observations.util import maybe_download_and_extract
 
 
-def un_gdp_infant_mortality(path):
+def gdp_infant_mortality(path):
   """GDP and Infant Mortality
 
   The `UN` data frame has 207 rows and 2 columns. The data are for 1998
@@ -33,7 +33,8 @@ def un_gdp_infant_mortality(path):
     path: str.
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
-      Filename is `un_gdp_infant_mortality.csv`.
+      Filename is `gdp_infant_mortality.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 207 rows and 2 columns and
@@ -41,12 +42,12 @@ def un_gdp_infant_mortality(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = 'un_gdp_infant_mortality.csv'
+  filename = 'gdp_infant_mortality.csv'
   if not os.path.exists(os.path.join(path, filename)):
     url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
           '/car/UN.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name='un_gdp_infant_mortality.csv',
+                               save_file_name='gdp_infant_mortality.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

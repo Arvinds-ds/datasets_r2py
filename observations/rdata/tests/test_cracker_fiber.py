@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.cracker_fiber import cracker_fiber
 
 def test_cracker_fiber():

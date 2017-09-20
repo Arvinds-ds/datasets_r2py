@@ -43,6 +43,7 @@ def accident(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `accident.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 40 rows and 5 columns and

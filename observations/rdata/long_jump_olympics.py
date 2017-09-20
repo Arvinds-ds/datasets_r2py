@@ -33,6 +33,7 @@ def long_jump_olympics(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `long_jump_olympics.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 26 rows and 2 columns and

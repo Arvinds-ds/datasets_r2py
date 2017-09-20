@@ -6,15 +6,14 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
-from observations.rdata.weight_loss_incentive7 import weight_loss_incentive7
+from observations.rdata.wght_loss_incentive7 import wght_loss_incentive7
 
-def test_weight_loss_incentive7():
-  """Test module weight_loss_incentive7.py by downloading weight_loss_incentive7.csv and testing shape of 
+def test_wght_loss_incentive7():
+  """Test module wght_loss_incentive7.py by downloading wght_loss_incentive7.csv and testing shape of 
     extracted data has 33 rows and 2 columns
   """
   test_path = tempfile.mkdtemp()
-  x_train, metadata = weight_loss_incentive7(test_path)
+  x_train, metadata = wght_loss_incentive7(test_path)
   try:
     assert x_train.shape == (33,2)
   except:

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.hair_eye_color import hair_eye_color
 
 def test_hair_eye_color():

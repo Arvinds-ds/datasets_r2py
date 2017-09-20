@@ -75,15 +75,16 @@ def mgus(path):
   mgus1: The same data set in start,stop format. Contains the id, age,
   sex, and laboratory variable described above along with
 
-  +----------------+--------------------------------------------------------------------------------+
-  | start, stop:   | sequential intervals of time for each subject                                  |
-  +----------------+--------------------------------------------------------------------------------+
-  | status:        | =1 if the interval ends in an event                                            |
-  +----------------+--------------------------------------------------------------------------------+
-  | event:         | a factor containing the event type: censor, death, or plasma cell malignancy   |
-  +----------------+--------------------------------------------------------------------------------+
-  | enum:          | event number for each subject: 1 or 2                                          |
-  +----------------+--------------------------------------------------------------------------------+
++----------------+----------------------------------------------------------+
+| start, stop:   | sequential intervals of time for each subject            |
++----------------+----------------------------------------------------------+
+| status:        | =1 if the interval ends in an event                      |
++----------------+----------------------------------------------------------+
+| event:         | a factor containing the event type: censor, death,       |
+|                | or plasma cell malignancy                                |
++----------------+----------------------------------------------------------+
+| enum:          | event number for each subject: 1 or 2                    |
++----------------+----------------------------------------------------------+
 
   Mayo Clinic data courtesy of Dr. Robert Kyle.
 
@@ -93,6 +94,7 @@ def mgus(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `mgus.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 241 rows and 12 columns and

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.bfi_dictionary import bfi_dictionary
 
 def test_bfi_dictionary():

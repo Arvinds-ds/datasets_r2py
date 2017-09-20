@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.diamonds2 import diamonds2
 
 def test_diamonds2():

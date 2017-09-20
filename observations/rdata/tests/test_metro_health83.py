@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.metro_health83 import metro_health83
 
 def test_metro_health83():

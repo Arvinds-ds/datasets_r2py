@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.stars_cyg import stars_cyg
 
 def test_stars_cyg():

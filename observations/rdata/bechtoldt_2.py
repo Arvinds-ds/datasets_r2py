@@ -31,6 +31,7 @@ def bechtoldt_2(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `bechtoldt_2.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 17 rows and 17 columns and

@@ -32,6 +32,7 @@ def chickwts(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `chickwts.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 71 rows and 2 columns and

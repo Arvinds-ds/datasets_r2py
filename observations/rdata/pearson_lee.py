@@ -11,7 +11,8 @@ from observations.util import maybe_download_and_extract
 
 
 def pearson_lee(path):
-  """Pearson and Lee's data on the heights of parents and children classified by gender
+  """Pearson and Lee's data on the heights of parents and children classified b
+  y gender
 
   Wachsmuth et. al (2003) noticed that a loess smooth through Galton's
   data on heights of mid-parents and their offspring exhibited a slightly
@@ -59,6 +60,7 @@ def pearson_lee(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `pearson_lee.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 746 rows and 6 columns and

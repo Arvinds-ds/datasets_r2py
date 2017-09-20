@@ -10,13 +10,15 @@ import sys
 from observations.util import maybe_download_and_extract
 
 
-def hhs_cyber_security_breaches(path):
-  """Cybersecurity breaches reported to the US Department of Health and Human Services
+def hhs_cybsec_breaches(path):
+  """Cybersecurity breaches reported to the US Department of Health and Human S
+  ervices
 
   Since October 2009 organizations in the U.S. that store data on human
   health are required to report any incident that compromises the
   confidentiality of 500 or more patients / human subjects (`45 C.F.R.
-  164.408 <http://www.hhs.gov/ocr/privacy/hipaa/administrative/breachnotificationrule/brinstruction.html>`__)
+164.408 <http://www.hhs.gov/ocr/privacy/hipaa/administrative/breachnotificati
+  onrule/brinstruction.html>`__)
   These reports are publicly available. `HHSCyberSecurityBreaches` was
   downloaded from `the Office for Civil Rights of the U.S. Department of
   Health and Human Services,
@@ -81,7 +83,8 @@ def hhs_cyber_security_breaches(path):
     path: str.
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
-      Filename is `hhs_cyber_security_breaches.csv`.
+      Filename is `hhs_cybsec_breaches.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 1151 rows and 9 columns and
@@ -89,12 +92,12 @@ def hhs_cyber_security_breaches(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = 'hhs_cyber_security_breaches.csv'
+  filename = 'hhs_cybsec_breaches.csv'
   if not os.path.exists(os.path.join(path, filename)):
     url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
           '/Ecdat/HHSCyberSecurityBreaches.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name='hhs_cyber_security_breaches.csv',
+                               save_file_name='hhs_cybsec_breaches.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

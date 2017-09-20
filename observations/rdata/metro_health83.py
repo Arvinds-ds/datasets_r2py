@@ -90,6 +90,7 @@ def metro_health83(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `metro_health83.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 83 rows and 16 columns and

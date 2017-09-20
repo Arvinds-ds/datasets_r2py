@@ -35,13 +35,6 @@ def heart(path):
   `clength`
       Y: Catheter Length (in centimeters)
 
-  Note
-  ~~~~
-
-  There are other `heart` datasets in other **R** packages, notably
-  survival, hence considering using `package = "robustbase"`, see
-  examples.
-
   Weisberg (1980)
 
   Chambers et al. (1983)
@@ -55,6 +48,7 @@ def heart(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `heart.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 172 rows and 8 columns and

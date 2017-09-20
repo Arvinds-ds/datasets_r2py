@@ -24,16 +24,6 @@ def animals2(path):
   `brain`
       brain weight in g
 
-  Note
-  ~~~~
-
-  After loading the MASS package, the data set is simply constructed by
-  `Animals2 <- local({D <- rbind(Animals, mammals);       unique(D[order(D$body,D$brain),])})`.
-
-  Rousseeuw and Leroy (1987)'s ‘brain’ data is the same as MASS's
-  `Animals` (with Rat and Brachiosaurus interchanged, see the example
-  below).
-
   Weisberg, S. (1985) *Applied Linear Regression.* 2nd edition. Wiley, pp.
   144–5.
 
@@ -46,6 +36,7 @@ def animals2(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `animals2.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 65 rows and 2 columns and

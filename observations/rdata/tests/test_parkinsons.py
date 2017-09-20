@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.parkinsons import parkinsons
 
 def test_parkinsons():

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.final_four_short import final_four_short
 
 def test_final_four_short():

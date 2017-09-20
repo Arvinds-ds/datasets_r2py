@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.sunspot_month import sunspot_month
 
 def test_sunspot_month():

@@ -35,6 +35,7 @@ def ucb_admissions(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `ucb_admissions.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 24 rows and 4 columns and

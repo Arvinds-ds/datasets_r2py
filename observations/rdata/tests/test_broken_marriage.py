@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.broken_marriage import broken_marriage
 
 def test_broken_marriage():

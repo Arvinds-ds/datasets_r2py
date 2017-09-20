@@ -61,6 +61,7 @@ def kostecki_dillon(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `kostecki_dillon.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 4152 rows and 9 columns and

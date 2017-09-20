@@ -65,7 +65,8 @@ def cps91(path):
 
   -  lwage. log(hrwage)
 
-  https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_
+  isbn_issn=9781111531041
 
   Args:
 
@@ -73,6 +74,7 @@ def cps91(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `cps91.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 5634 rows and 24 columns and

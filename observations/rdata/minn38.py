@@ -51,6 +51,7 @@ def minn38(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `minn38.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 168 rows and 5 columns and

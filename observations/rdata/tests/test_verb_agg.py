@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.verb_agg import verb_agg
 
 def test_verb_agg():

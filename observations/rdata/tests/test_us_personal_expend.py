@@ -6,15 +6,14 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
-from observations.rdata.us_personal_expenditure import us_personal_expenditure
+from observations.rdata.us_personal_expend import us_personal_expend
 
-def test_us_personal_expenditure():
-  """Test module us_personal_expenditure.py by downloading us_personal_expenditure.csv and testing shape of 
+def test_us_personal_expend():
+  """Test module us_personal_expend.py by downloading us_personal_expend.csv and testing shape of 
     extracted data has 5 rows and 5 columns
   """
   test_path = tempfile.mkdtemp()
-  x_train, metadata = us_personal_expenditure(test_path)
+  x_train, metadata = us_personal_expend(test_path)
   try:
     assert x_train.shape == (5,5)
   except:

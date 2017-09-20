@@ -60,6 +60,7 @@ def fantasy_baseball(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `fantasy_baseball.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 24 rows and 9 columns and

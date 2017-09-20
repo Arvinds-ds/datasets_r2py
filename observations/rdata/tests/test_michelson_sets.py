@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.michelson_sets import michelson_sets
 
 def test_michelson_sets():

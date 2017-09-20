@@ -55,6 +55,7 @@ def cpus(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `cpus.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 209 rows and 9 columns and

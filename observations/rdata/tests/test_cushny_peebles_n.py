@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.cushny_peebles_n import cushny_peebles_n
 
 def test_cushny_peebles_n():

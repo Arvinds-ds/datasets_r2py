@@ -52,6 +52,7 @@ def hc_choice_california(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `hc_choice_california.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 250 rows and 18 columns and

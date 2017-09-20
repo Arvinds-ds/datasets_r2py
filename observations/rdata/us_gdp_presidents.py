@@ -47,7 +47,8 @@ def us_gdp_presidents(path):
   Worth <http://measuringworth.com/>`__ with the presidency and a list of
   major wars and an estimate of the battle deaths by year per million
   population. `US unemployment is also
-  considered. <https://en.wikipedia.org/wiki/Unemployment_in_the_United_States#Historical_unemployment_rate_charts>`__
+considered. <https://en.wikipedia.org/wiki/Unemployment_in_the_United_States#
+  Historical_unemployment_rate_charts>`__
 
   A `data.frame` containing 259 observations on the following variables:
 
@@ -101,7 +102,8 @@ def us_gdp_presidents(path):
       War <http://correlatesofwar.org/>`__. For wars between 1790 and
       1815, it must have appeared in the Wikipedia `"List of wars
       involving the United
-      States" <https://en.wikipedia.org/wiki/List_of_wars_involving_the_United_States>`__.
+    States" <https://en.wikipedia.org/wiki/List_of_wars_involving_the_United_
+  States>`__.
 
       The resulting list includes a few adjustments to the list of wars
       that might come readily to mind for people moderately familiar with
@@ -198,11 +200,13 @@ def us_gdp_presidents(path):
   2015-09-02.
 
   Wikipedia, `"List of wars involving the United
-  States" <https://en.wikipedia.org/wiki/List_of_wars_involving_the_United_States>`__,
+States" <https://en.wikipedia.org/wiki/List_of_wars_involving_the_United_Stat
+  es>`__,
   accessed 2015-09-13.
 
   `Wikipedia, "Unemployment in the United
-  States" <https://en.wikipedia.org/wiki/Unemployment_in_the_United_States#Historical_unemployment_rate_charts>`__.
+States" <https://en.wikipedia.org/wiki/Unemployment_in_the_United_States#Hist
+  orical_unemployment_rate_charts>`__.
   See also
   https://en.wikipedia.org/wiki/User_talk:Peace01234#Unemployment_Data.
   Accessed 2016-07-08.
@@ -210,7 +214,8 @@ def us_gdp_presidents(path):
   Stanley Lebergott (1964). Manpower in Economic Growth: The American
   Record since 1800. Pages 164-190. New York: McGraw-Hill. Cited from
   `Wikipedia, "Unemployment in the United
-  States" <https://en.wikipedia.org/wiki/Unemployment_in_the_United_States#Historical_unemployment_rate_charts>`__,
+States" <https://en.wikipedia.org/wiki/Unemployment_in_the_United_States#Hist
+  orical_unemployment_rate_charts>`__,
   accessed 2016-07-08.
 
   Christina Romer (1986). "Spurious Volatility in Historical Unemployment
@@ -226,6 +231,7 @@ def us_gdp_presidents(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `us_gdp_presidents.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 259 rows and 12 columns and

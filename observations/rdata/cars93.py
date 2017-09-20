@@ -111,6 +111,7 @@ def cars93(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `cars93.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 93 rows and 27 columns and

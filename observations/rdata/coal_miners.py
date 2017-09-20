@@ -43,6 +43,7 @@ def coal_miners(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `coal_miners.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 36 rows and 4 columns and

@@ -65,6 +65,7 @@ def dengue(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `dengue.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 2000 rows and 13 columns and

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.high_peaks import high_peaks
 
 def test_high_peaks():

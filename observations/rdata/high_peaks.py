@@ -50,6 +50,7 @@ def high_peaks(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `high_peaks.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 46 rows and 6 columns and

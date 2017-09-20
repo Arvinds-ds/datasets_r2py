@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.uk_gas import uk_gas
 
 def test_uk_gas():

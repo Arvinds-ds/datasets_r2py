@@ -39,6 +39,7 @@ def allograft(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `allograft.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 34 rows and 4 columns and

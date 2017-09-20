@@ -58,6 +58,7 @@ def polio_trials(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `polio_trials.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 8 rows and 6 columns and

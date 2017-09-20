@@ -6,15 +6,14 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
-from observations.rdata.incidents_by_country_yr import incidents_by_country_yr
+from observations.rdata.terr_incidents import terr_incidents
 
-def test_incidents_by_country_yr():
-  """Test module incidents_by_country_yr.py by downloading incidents_by_country_yr.csv and testing shape of 
+def test_terr_incidents():
+  """Test module terr_incidents.py by downloading terr_incidents.csv and testing shape of 
     extracted data has 206 rows and 45 columns
   """
   test_path = tempfile.mkdtemp()
-  x_train, metadata = incidents_by_country_yr(test_path)
+  x_train, metadata = terr_incidents(test_path)
   try:
     assert x_train.shape == (206,45)
   except:

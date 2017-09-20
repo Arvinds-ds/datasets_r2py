@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.hawk_tail2 import hawk_tail2
 
 def test_hawk_tail2():

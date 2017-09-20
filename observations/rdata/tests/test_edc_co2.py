@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.edc_co2 import edc_co2
 
 def test_edc_co2():

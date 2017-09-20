@@ -51,6 +51,7 @@ def gasoline(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `gasoline.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 342 rows and 6 columns and

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.nlsy_v import nlsy_v
 
 def test_nlsy_v():

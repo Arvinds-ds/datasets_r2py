@@ -93,6 +93,7 @@ def socsupport(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `socsupport.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 95 rows and 20 columns and

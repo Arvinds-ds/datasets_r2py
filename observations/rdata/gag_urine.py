@@ -35,6 +35,7 @@ def gag_urine(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `gag_urine.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 314 rows and 2 columns and

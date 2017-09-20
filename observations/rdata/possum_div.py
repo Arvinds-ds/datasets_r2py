@@ -62,8 +62,6 @@ def possum_div(path):
   BAcacia
       a numeric vector giving the basal area of acacia species.
 
-  | 
-
   eucalyptus
       a 3-level `factor` specifying the species of eucalypt with the
       greatest stand basal area. This has the same information as the
@@ -77,8 +75,6 @@ def possum_div(path):
 
   E.nitens
       0-1 indicator for Eucalyptus nitens
-
-  | 
 
   aspect
       a 4-level `factor` specifying the aspect of the site. It is the
@@ -106,6 +102,7 @@ def possum_div(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `possum_div.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 151 rows and 9 columns and

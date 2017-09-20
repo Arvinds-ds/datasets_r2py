@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.leaftemp_all import leaftemp_all
 
 def test_leaftemp_all():

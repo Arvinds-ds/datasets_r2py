@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.space_shuttle import space_shuttle
 
 def test_space_shuttle():

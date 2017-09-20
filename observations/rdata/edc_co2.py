@@ -24,7 +24,7 @@ def edc_co2(path):
   `co2`
       CO2 level (ppmv)
 
-  http://www.ncdc.noaa.gov/paleo/icecore/antarctica/domec/domec_epica_data.html
+http://www.ncdc.noaa.gov/paleo/icecore/antarctica/domec/domec_epica_data.html
 
   Args:
 
@@ -32,6 +32,7 @@ def edc_co2(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `edc_co2.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 1096 rows and 2 columns and

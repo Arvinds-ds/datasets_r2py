@@ -19,23 +19,23 @@ def rep_vict(path):
   A 2-dimensional array resulting from cross-tabulating victimization. The
   variables and their levels are as follows:
 
-  +--------------------------+--------------------------+--------------------------+
-  | No                       | Name                     | Levels                   |
-  +--------------------------+--------------------------+--------------------------+
-  | 1                        | First Victimization      | Rape, Assault, Robbery,  |
-  |                          |                          | Pickpocket, Personal     |
-  |                          |                          | Larceny,                 |
-  +--------------------------+--------------------------+--------------------------+
-  |                          |                          | Burglary, Household      |
-  |                          |                          | Larceny, Auto Theft      |
-  +--------------------------+--------------------------+--------------------------+
-  | 2                        | Second Victimization     | Rape, Assault, Robbery,  |
-  |                          |                          | Pickpocket, Personal     |
-  |                          |                          | Larceny,                 |
-  +--------------------------+--------------------------+--------------------------+
-  |                          |                          | Burglary, Household      |
-  |                          |                          | Larceny, Auto Theft      |
-  +--------------------------+--------------------------+--------------------------+
++---------------------+--------------------------+--------------------------+
+| No                  | Name                     | Levels                   |
++---------------------+--------------------------+--------------------------+
+| 1                   | First Victimization      | Rape, Assault, Robbery,  |
+|                     |                          | Pickpocket, Personal     |
+|                     |                          | Larceny,                 |
++---------------------+--------------------------+--------------------------+
+|                     |                          | Burglary, Household      |
+|                     |                          | Larceny, Auto Theft      |
++---------------------+--------------------------+--------------------------+
+| 2                   | Second Victimization     | Rape, Assault, Robbery,  |
+|                     |                          | Pickpocket, Personal     |
+|                     |                          | Larceny,                 |
++---------------------+--------------------------+--------------------------+
+|                     |                          | Burglary, Household      |
+|                     |                          | Larceny, Auto Theft      |
++---------------------+--------------------------+--------------------------+
 
   Michael Friendly (2000), Visualizing Categorical Data, page 113.
 
@@ -45,6 +45,7 @@ def rep_vict(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `rep_vict.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 8 rows and 8 columns and

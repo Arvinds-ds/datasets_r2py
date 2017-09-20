@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.siegels_ex import siegels_ex
 
 def test_siegels_ex():

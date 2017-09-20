@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.transp_eq import transp_eq
 
 def test_transp_eq():

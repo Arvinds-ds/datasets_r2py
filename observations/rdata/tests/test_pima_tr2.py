@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.pima_tr2 import pima_tr2
 
 def test_pima_tr2():

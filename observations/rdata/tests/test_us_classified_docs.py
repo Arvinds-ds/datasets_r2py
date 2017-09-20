@@ -6,15 +6,14 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
-from observations.rdata.us_classified_documents import us_classified_documents
+from observations.rdata.us_classified_docs import us_classified_docs
 
-def test_us_classified_documents():
-  """Test module us_classified_documents.py by downloading us_classified_documents.csv and testing shape of 
+def test_us_classified_docs():
+  """Test module us_classified_docs.py by downloading us_classified_docs.csv and testing shape of 
     extracted data has 29 rows and 5 columns
   """
   test_path = tempfile.mkdtemp()
-  x_train, metadata = us_classified_documents(test_path)
+  x_train, metadata = us_classified_docs(test_path)
   try:
     assert x_train.shape == (29,5)
   except:

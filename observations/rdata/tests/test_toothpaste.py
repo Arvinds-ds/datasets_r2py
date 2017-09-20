@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.toothpaste import toothpaste
 
 def test_toothpaste():

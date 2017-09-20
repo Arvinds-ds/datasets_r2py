@@ -32,6 +32,7 @@ def putts1(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `putts1.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 587 rows and 2 columns and

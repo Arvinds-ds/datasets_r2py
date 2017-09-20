@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.indian_irish import indian_irish
 
 def test_indian_irish():

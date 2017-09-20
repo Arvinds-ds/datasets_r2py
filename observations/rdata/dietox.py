@@ -48,6 +48,7 @@ def dietox(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `dietox.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 861 rows and 7 columns and

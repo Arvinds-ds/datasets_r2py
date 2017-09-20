@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.long_jump_olympics import long_jump_olympics
 
 def test_long_jump_olympics():

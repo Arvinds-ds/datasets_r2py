@@ -1949,6 +1949,7 @@ def rock_art(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `rock_art.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 103 rows and 641 columns and

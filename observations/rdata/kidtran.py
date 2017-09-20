@@ -44,6 +44,7 @@ def kidtran(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `kidtran.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 863 rows and 6 columns and

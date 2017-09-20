@@ -27,6 +27,7 @@ def hla(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `hla.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 271 rows and 8 columns and

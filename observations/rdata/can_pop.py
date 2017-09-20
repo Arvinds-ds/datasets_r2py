@@ -30,7 +30,8 @@ def can_pop(path):
   Canada (1994) *Canada Year Book*. Statistics Canada, Table 3.2.
 
   Statistics Canada:
-  http://www12.statcan.ca/english/census01/products/standard/popdwell/Table-PR.cfm.
+http://www12.statcan.ca/english/census01/products/standard/popdwell/Table-PR.
+  cfm.
 
   Args:
 
@@ -38,6 +39,7 @@ def can_pop(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `can_pop.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 16 rows and 2 columns and

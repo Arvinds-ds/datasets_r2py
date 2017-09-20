@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.supreme_court import supreme_court
 
 def test_supreme_court():

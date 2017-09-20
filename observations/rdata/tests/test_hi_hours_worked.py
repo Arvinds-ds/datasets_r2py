@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.hi_hours_worked import hi_hours_worked
 
 def test_hi_hours_worked():

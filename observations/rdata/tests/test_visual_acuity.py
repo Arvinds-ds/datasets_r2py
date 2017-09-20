@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.visual_acuity import visual_acuity
 
 def test_visual_acuity():

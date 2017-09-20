@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.sat_gpa import sat_gpa
 
 def test_sat_gpa():

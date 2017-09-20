@@ -51,6 +51,7 @@ def us_judge_ratings(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `us_judge_ratings.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 43 rows and 12 columns and

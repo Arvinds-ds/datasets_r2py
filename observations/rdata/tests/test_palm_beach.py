@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.palm_beach import palm_beach
 
 def test_palm_beach():

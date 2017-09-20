@@ -65,6 +65,7 @@ def budget_uk(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `budget_uk.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 1519 rows and 10 columns and

@@ -18,13 +18,6 @@ def neuro(path):
   subject. Each row of the matrix is a replication of the experiment and
   there were a total of 469 replicates.
 
-  Note
-  ~~~~
-
-  There are a lot of missing values in the matrix as different numbers of
-  firings were observed in different replicates. The number of firings
-  observed varied from 2 to 6.
-
   The data were collected and kindly made available by Dr. S.J. Boniface
   of the Neurophysiology Unit at the Radcliffe Infirmary, Oxford.
 
@@ -34,6 +27,7 @@ def neuro(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `neuro.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 469 rows and 6 columns and

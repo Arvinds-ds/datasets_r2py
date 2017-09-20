@@ -90,6 +90,33 @@ def help_rct(path):
 
   -  `treat` randomized to HELP clinic: `no` `yes`
 
+  Details
+  ~~~~~~~
+
+  Eligible subjects were adults, who spoke Spanish or English, reported
+  alcohol, heroin or cocaine as their first or second drug of choice,
+  resided in proximity to the primary care clinic to which they would be
+  referred or were homeless. Patients with established primary care
+  relationships they planned to continue, significant dementia, specific
+  plans to leave the Boston area that would prevent research
+  participation, failure to provide contact information for tracking
+  purposes, or pregnancy were excluded.
+
+  Subjects were interviewed at baseline during their detoxification stay
+  and follow-up interviews were undertaken every 6 months for 2 years. A
+  variety of continuous, count, discrete, and survival time predictors and
+  outcomes were collected at each of these five occasions.
+
+  This data set is a subset of the `HELPmiss` data set restricted to the
+  453 subjects who were fully observed on the `age`, `cesd`, `d1`,
+  `female`, `sex`, `g1b`, `homeless`, `i1`, `i2`, `indtot`,
+  `mcs`, `pcs`, `pss_fr`, `racegrp`, `satreat`, `substance`,
+  `treat`, and `sexrisk` variables. (There is some missingness in the
+  other variables.) `HELPmiss` contains 17 additional subjects with
+  partially observed data on some of these baseline variables. This is
+  also a subset of the `HELPfull` data which includes 5 timepoints and
+  many additional variables.
+
   http://www.math.smith.edu/help
 
   Args:
@@ -98,6 +125,7 @@ def help_rct(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `help_rct.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 453 rows and 27 columns and

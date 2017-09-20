@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.chemo_thc import chemo_thc
 
 def test_chemo_thc():

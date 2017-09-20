@@ -42,6 +42,7 @@ def cars93_summary(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `cars93_summary.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 6 rows and 4 columns and

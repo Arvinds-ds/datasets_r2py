@@ -11,7 +11,9 @@ from observations.util import maybe_download_and_extract
 
 
 def mofa(path):
-  """International Expansion of U.S. Mofa's (majority–owned Foreign Affiliates in Fire (finance, Insurance and Real Estate)
+  """International Expansion of U.S. Mofa's (majority–owned Foreign Affiliates)
+  Expansion of U.S. Mofa's (majority–owned Foreign Affiliates) in
+  Fire (finance, Insurance and Real Estate)
 
   a cross-section from 1982
 
@@ -60,6 +62,7 @@ def mofa(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `mofa.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 50 rows and 5 columns and

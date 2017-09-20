@@ -97,6 +97,7 @@ def bomsoi(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `bomsoi.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 106 rows and 21 columns and

@@ -42,6 +42,7 @@ def sunspot_month(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `sunspot_month.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 3177 rows and 2 columns and

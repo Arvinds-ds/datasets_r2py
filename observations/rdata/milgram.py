@@ -34,6 +34,7 @@ def milgram(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `milgram.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 37 rows and 2 columns and

@@ -11,7 +11,8 @@ from observations.util import maybe_download_and_extract
 
 
 def klein2(path):
-  """Simulation Data for model Two-Stage Least Square (twosls) that corresponds to method 2SLS of systemfit
+  """Simulation Data for model Two-Stage Least Square (twosls) that corresponds
+   to method 2SLS of systemfit
 
   Dataframe contains annual observations of US economy from 1920 to 1940.
   The columns are, Year, C=Consumption, P=Corporate profits, P1=Previous
@@ -30,6 +31,7 @@ def klein2(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `klein2.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 21 rows and 14 columns and

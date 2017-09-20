@@ -45,6 +45,7 @@ def sitka89(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `sitka89.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 632 rows and 4 columns and

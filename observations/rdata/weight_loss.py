@@ -48,6 +48,7 @@ def weight_loss(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `weight_loss.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 34 rows and 7 columns and

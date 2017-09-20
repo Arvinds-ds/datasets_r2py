@@ -39,12 +39,6 @@ def aids2(path):
   `age`
       Age (years) at diagnosis.
 
-  Note
-  ~~~~
-
-  This data set has been slightly jittered as a condition of its release,
-  to ensure patient confidentiality.
-
   Dr P. J. Solomon and the Australian National Centre in HIV Epidemiology
   and Clinical Research.
 
@@ -54,6 +48,7 @@ def aids2(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `aids2.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 2843 rows and 7 columns and

@@ -11,7 +11,8 @@ from observations.util import maybe_download_and_extract
 
 
 def epi_bfi(path):
-  """13 personality scales from the Eysenck Personality Inventory and Big 5 inventory
+  """13 personality scales from the Eysenck Personality Inventory and Big 5 inv
+  entory
 
   A small data set of 5 scales from the Eysenck Personality Inventory, 5
   from a Big 5 inventory, a Beck Depression Inventory, and State and Trait
@@ -68,6 +69,7 @@ def epi_bfi(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `epi_bfi.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 231 rows and 13 columns and

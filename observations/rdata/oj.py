@@ -84,6 +84,7 @@ def oj(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `oj.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 1070 rows and 18 columns and

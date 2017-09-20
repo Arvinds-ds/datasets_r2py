@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.drinks_wages import drinks_wages
 
 def test_drinks_wages():

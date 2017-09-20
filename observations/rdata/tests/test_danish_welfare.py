@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.danish_welfare import danish_welfare
 
 def test_danish_welfare():

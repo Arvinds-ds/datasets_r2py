@@ -50,6 +50,7 @@ def jobs(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `jobs.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 899 rows and 17 columns and

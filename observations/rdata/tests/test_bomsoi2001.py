@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.bomsoi2001 import bomsoi2001
 
 def test_bomsoi2001():

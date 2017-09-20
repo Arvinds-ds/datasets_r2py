@@ -119,6 +119,7 @@ def kakadu(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `kakadu.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 1827 rows and 22 columns and

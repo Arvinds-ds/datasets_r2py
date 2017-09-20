@@ -51,7 +51,8 @@ def volat(path):
 
   -  pcsp\_3. pcip[\_n-3]
 
-  https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041
+https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_
+  isbn_issn=9781111531041
 
   Args:
 
@@ -59,6 +60,7 @@ def volat(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `volat.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 558 rows and 17 columns and

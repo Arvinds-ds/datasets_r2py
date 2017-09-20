@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.n_f_l2007_standings import n_f_l2007_standings
 
 def test_n_f_l2007_standings():

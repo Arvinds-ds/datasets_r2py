@@ -11,7 +11,8 @@ from observations.util import maybe_download_and_extract
 
 
 def nightingale(path):
-  """Florence Nightingale's data on deaths from various causes in the Crimean War
+  """Florence Nightingale's data on deaths from various causes in the Crimean W
+  ar
 
   In the history of data visualization, Florence Nightingale is best
   remembered for her role as a social activist and her view that
@@ -77,6 +78,7 @@ def nightingale(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `nightingale.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 24 rows and 10 columns and

@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.meap00_01 import meap00_01
 
 def test_meap00_01():

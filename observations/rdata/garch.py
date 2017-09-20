@@ -11,7 +11,8 @@ from observations.util import maybe_download_and_extract
 
 
 def garch(path):
-  """Daily Observations on Exchange Rates of the US Dollar Against Other Currencies
+  """Daily Observations on Exchange Rates of the US Dollar Against Other Curren
+  cies
 
   daily observations from 1980–01 to 1987–05–21
 
@@ -53,6 +54,7 @@ def garch(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `garch.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 1867 rows and 8 columns and

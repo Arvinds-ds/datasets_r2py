@@ -18,12 +18,6 @@ def precip(path):
 
   A named vector of length 70.
 
-  Note
-  ~~~~
-
-  The dataset version up to Nov.16, 2016 had a typo in `"Cincinnati"`'s
-  name. The examples show how to recreate that version.
-
   Statistical Abstracts of the United States, 1975.
 
   Args:
@@ -32,6 +26,7 @@ def precip(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `precip.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 70 rows and 1 columns and

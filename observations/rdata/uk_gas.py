@@ -27,6 +27,7 @@ def uk_gas(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `uk_gas.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 108 rows and 2 columns and

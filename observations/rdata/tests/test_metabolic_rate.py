@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.metabolic_rate import metabolic_rate
 
 def test_metabolic_rate():

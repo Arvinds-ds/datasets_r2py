@@ -32,6 +32,7 @@ def birthdeathrates(path):
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
       Filename is `birthdeathrates.csv`.
+
   Returns:
 
     Tuple of np.ndarray `x_train` with 69 rows and 2 columns and

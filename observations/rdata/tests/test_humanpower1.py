@@ -6,7 +6,6 @@ import shutil
 import sys
 import tempfile
 
-sys.path.append('../../../')
 from observations.rdata.humanpower1 import humanpower1
 
 def test_humanpower1():
