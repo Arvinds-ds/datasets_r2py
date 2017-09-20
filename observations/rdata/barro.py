@@ -5,25 +5,23 @@ from __future__ import print_function
 import csv
 import numpy as np
 import os
-import pandas as pd
 import sys
 
-sys.path.append('../../')
 from observations.util import maybe_download_and_extract
 
 
 def barro(path):
   """Barro Data
-  
+
   Version of the Barro Growth Data used in Koenker and Machado(1999). This
   is a regression data set consisting of 161 observations on determinants
   of cross country GDP growth rates. There are 13 covariates with dimnames
   corresponding to the original Barro and Lee source. See
   http://www.nber.org/pub/barro.lee/. The first 71 observations are on the
   period 1965-75, remainder on 1987-85.
-  
+
   A data frame containing 161 observations on 14 variables:
-  
+
   +---------+----------------------------------+
   | [,1]    | "Annual Change Per Capita GDP"   |
   +---------+----------------------------------+
@@ -55,22 +53,27 @@ def barro(path):
   +---------+----------------------------------+
 
   Args:
+
     path: str.
       Path to directory which either stores file or otherwise file will
-      be downloaded and extracted there. Filename is `barro.csv`.
+      be downloaded and extracted there.
+      Filename is `barro.csv`.
   Returns:
+
     Tuple of np.ndarray `x_train` with 161 rows and 14 columns and
     dictionary `metadata` of column headers (feature names).
   """
+  import pandas as pd
   path = os.path.expanduser(path)
   filename = "barro.csv"
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv/quantreg/barro.csv"
+    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
+          "/quantreg/barro.csv"
     maybe_download_and_extract(path, url,
-			       save_file_name="barro.csv",
-			       resume=False)
+                               save_file_name="barro.csv",
+                               resume=False)
 
-  data = pd.read_csv(os.path.join(path,filename), index_col=0)
+  data = pd.read_csv(os.path.join(path, filename), index_col=0)
   x_train = data.values
   metadata = {'columns': data.columns}
   return x_train, metadata

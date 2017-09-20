@@ -5,25 +5,23 @@ from __future__ import print_function
 import csv
 import numpy as np
 import os
-import pandas as pd
 import sys
 
-sys.path.append('../../')
 from observations.util import maybe_download_and_extract
 
 
 def crohn(path):
   """Crohn's disease data
-  
+
   The data set consist of 103 common (>5% minor allele frequency) SNPs
   genotyped in 129 trios from an European-derived population. These SNPs
   are in a 500-kb region on human chromosome 5q31 implicated as containing
   a genetic risk factor for Crohn disease.
-  
+
   The positions, names and haplotype blocks reported are as follows,
-  
+
   ::
-  
+
       274044   IGR1118a_1 BLOCK 1
       274541   IGR1119a_1 *
       286593   IGR1143a_1 *
@@ -127,37 +125,42 @@ def crohn(path):
       877671   GENS020ex3_2   *
       877809   GENS020ex3_1   *
       890710   GENS020ex1_1   BLOCK 11
-  
+
   However it has been updated after the paper was published (posted on
   http://www.broad.mit.edu/humgen/IBD5/haplodata.html)
-  
+
   An example use of the data is with the following paper, Kelly M.
   Burkett, Celia M. T. Greenwood, BradMcNeney, Jinko Graham. Gene
   genealogies for genetic association mapping, with application to Crohn's
   disease. Fron Genet 2013, 4(260) doi: 10.3389/fgene.2013.00260
-  
+
   A data frame containing 387 rows and 212 columns
-  
+
   MJ Daly, JD Rioux, SF Schaffner, TJ Hudson, ES Lander (2001)
   High-resolution haplotype structure in the human genome Nature Genetics
 
   Args:
+
     path: str.
       Path to directory which either stores file or otherwise file will
-      be downloaded and extracted there. Filename is `crohn.csv`.
+      be downloaded and extracted there.
+      Filename is `crohn.csv`.
   Returns:
+
     Tuple of np.ndarray `x_train` with 387 rows and 212 columns and
     dictionary `metadata` of column headers (feature names).
   """
+  import pandas as pd
   path = os.path.expanduser(path)
   filename = "crohn.csv"
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv/gap/crohn.csv"
+    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
+          "/gap/crohn.csv"
     maybe_download_and_extract(path, url,
-			       save_file_name="crohn.csv",
-			       resume=False)
+                               save_file_name="crohn.csv",
+                               resume=False)
 
-  data = pd.read_csv(os.path.join(path,filename), index_col=0)
+  data = pd.read_csv(os.path.join(path, filename), index_col=0)
   x_train = data.values
   metadata = {'columns': data.columns}
   return x_train, metadata

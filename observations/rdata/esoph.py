@@ -5,21 +5,19 @@ from __future__ import print_function
 import csv
 import numpy as np
 import os
-import pandas as pd
 import sys
 
-sys.path.append('../../')
 from observations.util import maybe_download_and_extract
 
 
 def esoph(path):
   """Smoking, Alcohol and (O)esophageal Cancer
-  
+
   Data from a case-control study of (o)esophageal cancer in
   Ille-et-Vilaine, France.
-  
+
   A data frame with records for 88 age/alcohol/tobacco combinations.
-  
+
   +--------------------+--------------------+--------------------+--------------------+
   | [,1]               | "agegp"            | Age group          | 1 25--34 years     |
   +--------------------+--------------------+--------------------+--------------------+
@@ -55,33 +53,38 @@ def esoph(path):
   +--------------------+--------------------+--------------------+--------------------+
   | [,5]               | "ncontrols"        | Number of controls |                    |
   +--------------------+--------------------+--------------------+--------------------+
-  
+
   Author(s)
   ~~~~~~~~~
-  
+
   Thomas Lumley
-  
+
   Breslow, N. E. and Day, N. E. (1980) *Statistical Methods in Cancer
   Research. Volume 1: The Analysis of Case-Control Studies.* IARC Lyon /
   Oxford University Press.
 
   Args:
+
     path: str.
       Path to directory which either stores file or otherwise file will
-      be downloaded and extracted there. Filename is `esoph.csv`.
+      be downloaded and extracted there.
+      Filename is `esoph.csv`.
   Returns:
+
     Tuple of np.ndarray `x_train` with 88 rows and 5 columns and
     dictionary `metadata` of column headers (feature names).
   """
+  import pandas as pd
   path = os.path.expanduser(path)
   filename = "esoph.csv"
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv/datasets/esoph.csv"
+    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
+          "/datasets/esoph.csv"
     maybe_download_and_extract(path, url,
-			       save_file_name="esoph.csv",
-			       resume=False)
+                               save_file_name="esoph.csv",
+                               resume=False)
 
-  data = pd.read_csv(os.path.join(path,filename), index_col=0)
+  data = pd.read_csv(os.path.join(path, filename), index_col=0)
   x_train = data.values
   metadata = {'columns': data.columns}
   return x_train, metadata

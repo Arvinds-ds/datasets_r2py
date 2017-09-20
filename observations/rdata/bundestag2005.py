@@ -5,22 +5,20 @@ from __future__ import print_function
 import csv
 import numpy as np
 import os
-import pandas as pd
 import sys
 
-sys.path.append('../../')
 from observations.util import maybe_download_and_extract
 
 
 def bundestag2005(path):
   """Votes in German Bundestag Election 2005
-  
+
   Number of votes by province in the German Bundestag election 2005 (for
   the parties that eventually entered the parliament).
-  
+
   A 2-way `"table"` giving the number of votes for each party
   (`Fraktion`) in each of the 16 German provinces (`Bundesland`):
-  
+
   +------+--------------+---------------------------------------------------+
   | No   | Name         | Levels                                            |
   +------+--------------+---------------------------------------------------+
@@ -28,27 +26,32 @@ def bundestag2005(path):
   +------+--------------+---------------------------------------------------+
   | 2    | Fraktion     | SPD, CDU/CSU, Gruene, FDP, Linke                  |
   +------+--------------+---------------------------------------------------+
-  
+
   Der Bundeswahlleiter, Statistisches Bundesamt.
   http://www.bundeswahlleiter.de/de/bundestagswahlen/fruehere_bundestagswahlen/btw2005.html
 
   Args:
+
     path: str.
       Path to directory which either stores file or otherwise file will
-      be downloaded and extracted there. Filename is `bundestag2005.csv`.
+      be downloaded and extracted there.
+      Filename is `bundestag2005.csv`.
   Returns:
+
     Tuple of np.ndarray `x_train` with 16 rows and 5 columns and
     dictionary `metadata` of column headers (feature names).
   """
+  import pandas as pd
   path = os.path.expanduser(path)
   filename = "bundestag2005.csv"
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv/vcd/Bundestag2005.csv"
+    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
+          "/vcd/Bundestag2005.csv"
     maybe_download_and_extract(path, url,
-			       save_file_name="bundestag2005.csv",
-			       resume=False)
+                               save_file_name="bundestag2005.csv",
+                               resume=False)
 
-  data = pd.read_csv(os.path.join(path,filename), index_col=0)
+  data = pd.read_csv(os.path.join(path, filename), index_col=0)
   x_train = data.values
   metadata = {'columns': data.columns}
   return x_train, metadata

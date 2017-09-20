@@ -5,19 +5,17 @@ from __future__ import print_function
 import csv
 import numpy as np
 import os
-import pandas as pd
 import sys
 
-sys.path.append('../../')
 from observations.util import maybe_download_and_extract
 
 
 def infert(path):
   """Infertility after Spontaneous and Induced Abortion
-  
+
   This is a matched case-control study dating from before the availability
   of conditional logistic regression.
-  
+
   +--------------------------+--------------------------+--------------------------+
   | 1.                       | Education                | 0 = 0-5 years            |
   +--------------------------+--------------------------+--------------------------+
@@ -49,33 +47,38 @@ def infert(path):
   +--------------------------+--------------------------+--------------------------+
   | 8.                       | stratum number           | 1-63                     |
   +--------------------------+--------------------------+--------------------------+
-  
+
   Note
   ~~~~
-  
+
   One case with two prior spontaneous abortions and two prior induced
   abortions is omitted.
-  
+
   Trichopoulos *et al* (1976) *Br. J. of Obst. and Gynaec.* **83**,
   645–650.
 
   Args:
+
     path: str.
       Path to directory which either stores file or otherwise file will
-      be downloaded and extracted there. Filename is `infert.csv`.
+      be downloaded and extracted there.
+      Filename is `infert.csv`.
   Returns:
+
     Tuple of np.ndarray `x_train` with 248 rows and 8 columns and
     dictionary `metadata` of column headers (feature names).
   """
+  import pandas as pd
   path = os.path.expanduser(path)
   filename = "infert.csv"
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv/datasets/infert.csv"
+    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
+          "/datasets/infert.csv"
     maybe_download_and_extract(path, url,
-			       save_file_name="infert.csv",
-			       resume=False)
+                               save_file_name="infert.csv",
+                               resume=False)
 
-  data = pd.read_csv(os.path.join(path,filename), index_col=0)
+  data = pd.read_csv(os.path.join(path, filename), index_col=0)
   x_train = data.values
   metadata = {'columns': data.columns}
   return x_train, metadata

@@ -11,7 +11,7 @@ Usage
 `$ python gen_data_files`
 
 The starting point for the script is the `datasets_mod.csv` file that has the name, URL, documentation RST file, rows and colums etc. The script
-used jinja template engines to convert `template.py`, `test_template.py` and `init_template.py` to generate templated python source code and test script in a format required by `observations` module. The rst file is used to generate the doc string in python source.
+used jinja template engines to convert `template.tpl`, `test_template.tpl` and `init_template.tpl` to generate templated python source code and test script in a format required by `observations` module. The rst file is used to generate the doc string in python source.
 
 The source code is generated in `observations/rdata` folder and tests are generated in `observations/rdata/tests` folder
 

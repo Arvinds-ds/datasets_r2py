@@ -89,15 +89,24 @@ def extract_rst(extract_dict):
                 output+=line
             if i >= extract_dict['desc_start'] and i < extract_dict['desc_end']:
                 #print(line)
-                output+=indent+line
+                if line == '\n':
+                    output+= line
+                else:
+                    output+=indent+line
             if extract_dict['format_start'] > 0:
                 if i >= extract_dict['format_start'] and i < extract_dict['format_end']:
                     #print(line)
-                    output+=indent+line
+                    if line == '\n':
+                        output += line
+                    else:
+                        output += indent + line
             if extract_dict['source_start'] > 0:
                 if i >= extract_dict['source_start'] and i < extract_dict['source_end']:
                     #print(line)
-                    output+=indent+line
+                    if line == '\n':
+                        output += line
+                    else:
+                        output += indent + line
         output=output.replace('``','`')
     return output
 
@@ -108,7 +117,7 @@ def gen_context(row):
     if not os.path.exists(rst_loc):
        rst_loc = 'doc/' + package + '/rst/' + row['Item'].lower() +'.rst'
     try:
-    	rows = int(row['Rows'])
+        rows = int(row['Rows'])
     except ValueError:
         print(function)
         rows=''
@@ -118,6 +127,8 @@ def gen_context(row):
         print(function, rst_loc)
         cols=''
     url = row['csv']
+    if len(url) > 62:
+        url = url[:62] + '" \\\n' + ' '*10 + '"' + url[62:]
     file_name = row['lcitems'] + '.csv'
     try:
         desc = extract_rst(parse_rst(rst_loc))
@@ -143,8 +154,8 @@ def gen_data_test_files(row, file_path='./', test_file_path='./'):
     context = gen_context(row)
     if context is None:
         return
-    file_str = render('./template.py', context)
-    test_file_str = render('./test_template.py', context)
+    file_str = render('./template.tpl', context)
+    test_file_str = render('./test_template.tpl', context)
     with open(os.path.join(file_path,context['function']+'.py'), 'w') as f:
         f.write(file_str)
     with open(os.path.join(test_file_path,
@@ -160,7 +171,7 @@ def gen_init_file(dataset, path, import_prefix='observations.rdata'):
  
     function_imports='\n'.join(dataset.lcitems.map(import_names))
     allowed_symbols=',\n'.join(dataset.lcitems.map(allowed_modules))
-    init_file_str=render('./init_template.py',
+    init_file_str=render('./init_template.tpl',
                          {'function_imports': function_imports,
                           'allowed_symbols': allowed_symbols})
     with open(os.path.join(path, '__init__.py'), 'w') as f:
