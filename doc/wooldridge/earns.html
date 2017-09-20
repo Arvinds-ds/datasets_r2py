@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: earns</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for earns"><tr><td>earns</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>earns</h2>
+
+<h3>Description</h3>
+
+<p>Data loads lazily. Type data(earns) into the console.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data(earns)
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 41 rows and 14 variables:
+</p>
+
+<ul>
+<li><p> year. 1947 to 1987
+</p>
+</li>
+<li><p> wkearns. avg. real weekly earnings
+</p>
+</li>
+<li><p> wkhours. avg. weekly hours
+</p>
+</li>
+<li><p> outphr. output per labor hour
+</p>
+</li>
+<li><p> hrwage. wkearns/wkhours
+</p>
+</li>
+<li><p> lhrwage. log(hrwage)
+</p>
+</li>
+<li><p> loutphr. log(outphr)
+</p>
+</li>
+<li><p> t. time trend:  t=1 to 47
+</p>
+</li>
+<li><p> ghrwage. lhrwage - lhrwage[_n-1]
+</p>
+</li>
+<li><p> goutphr. loutphr - loutphr[_n-1]
+</p>
+</li>
+<li><p> ghrwge_1. ghrwage[_n-1]
+</p>
+</li>
+<li><p> goutph_1. goutphr[_n-1]
+</p>
+</li>
+<li><p> goutph_2. goutphr[_n-2]
+</p>
+</li>
+<li><p> lwkhours. log(wkhours)
+</p>
+</li></ul>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(earns)
+</pre>
+
+
+</body></html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: intqrt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for intqrt"><tr><td>intqrt</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>intqrt</h2>
+
+<h3>Description</h3>
+
+<p>Data loads lazily. Type data(intqrt) into the console.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data(intqrt)
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 124 rows and 23 variables:
+</p>
+
+<ul>
+<li><p> r3. bond equiv. yield, 3 mo T-bill
+</p>
+</li>
+<li><p> r6. bond equiv. yield, 6 mo T-bill
+</p>
+</li>
+<li><p> r12. yield on 1 yr. bond
+</p>
+</li>
+<li><p> p3. price of 3 mo. T-bill
+</p>
+</li>
+<li><p> p6. price of 6 mo. T-bill
+</p>
+</li>
+<li><p> hy6. 100*(p3 - p6[_n-1])/p6[_n-1])
+</p>
+</li>
+<li><p> hy3. r3*(91/365)
+</p>
+</li>
+<li><p> spr63. r6 - r3
+</p>
+</li>
+<li><p> hy3_1. hy3[_n-1]
+</p>
+</li>
+<li><p> hy6_1. hy6[_n-1]
+</p>
+</li>
+<li><p> spr63_1. spr63[_n-1]
+</p>
+</li>
+<li><p> hy6hy3_1. hy6 - hy3_1
+</p>
+</li>
+<li><p> cr3. r3 - r3_1
+</p>
+</li>
+<li><p> r3_1. r3[_n-1]
+</p>
+</li>
+<li><p> chy6. hy6 - hy6_1
+</p>
+</li>
+<li><p> chy3. hy3 - hy3_1
+</p>
+</li>
+<li><p> chy6_1. chy6[_n-1]
+</p>
+</li>
+<li><p> chy3_1. chy3[_n-1]
+</p>
+</li>
+<li><p> cr6. r6 - r6_1
+</p>
+</li>
+<li><p> cr6_1. cr6[_n-1]
+</p>
+</li>
+<li><p> cr3_1. cr3[_n-1]
+</p>
+</li>
+<li><p> r6_1. r6[_n-1]
+</p>
+</li>
+<li><p> cspr63. spr63 - spr63_1
+</p>
+</li></ul>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(intqrt)
+</pre>
+
+
+</body></html>

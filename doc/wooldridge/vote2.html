@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: vote2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for vote2"><tr><td>vote2</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>vote2</h2>
+
+<h3>Description</h3>
+
+<p>Data loads lazily. Type data(vote2) into the console.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data(vote2)
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 186 rows and 26 variables:
+</p>
+
+<ul>
+<li><p> state. state postal code
+</p>
+</li>
+<li><p> district. U.S. Congressional district
+</p>
+</li>
+<li><p> democ. =1 if incumbent democrat
+</p>
+</li>
+<li><p> vote90. inc. share two-party vote, 1990
+</p>
+</li>
+<li><p> vote88. inc. share two-party vote, 1988
+</p>
+</li>
+<li><p> inexp90. inc. camp. expends., 1990
+</p>
+</li>
+<li><p> chexp90. chl. camp. expends., 1990
+</p>
+</li>
+<li><p> inexp88. inc. camp. expends., 1988
+</p>
+</li>
+<li><p> chexp88. chl. camp. expends., 1988
+</p>
+</li>
+<li><p> prtystr. percent vote pres., same party, 1988
+</p>
+</li>
+<li><p> rptchall. =1 if a repeat challenger
+</p>
+</li>
+<li><p> tenure. years in H.R.
+</p>
+</li>
+<li><p> lawyer. =1 if law degree
+</p>
+</li>
+<li><p> linexp90. log(inexp90)
+</p>
+</li>
+<li><p> lchexp90. log(chexp90)
+</p>
+</li>
+<li><p> linexp88. log(inexp88)
+</p>
+</li>
+<li><p> lchexp88. log(chexp88)
+</p>
+</li>
+<li><p> incshr90. 100*(inexp90/(inexp90+chexp90))
+</p>
+</li>
+<li><p> incshr88. 100*(inexp88/(inexp88+chexp88))
+</p>
+</li>
+<li><p> cvote. vote90 - vote88
+</p>
+</li>
+<li><p> clinexp. linexp90 - linexp88
+</p>
+</li>
+<li><p> clchexp. lchexp90 - lchexp88
+</p>
+</li>
+<li><p> cincshr. incshr90 - incshr88
+</p>
+</li>
+<li><p> win88. =1 by definition
+</p>
+</li>
+<li><p> win90. =1 if inc. wins, 1990
+</p>
+</li>
+<li><p> cwin. win90 - win88
+</p>
+</li></ul>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(vote2)
+</pre>
+
+
+</body></html>

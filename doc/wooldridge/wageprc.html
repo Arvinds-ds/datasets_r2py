@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: wageprc</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for wageprc"><tr><td>wageprc</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>wageprc</h2>
+
+<h3>Description</h3>
+
+<p>Data loads lazily. Type data(wageprc) into the console.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data(wageprc)
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 286 rows and 20 variables:
+</p>
+
+<ul>
+<li><p> price. consumer price index
+</p>
+</li>
+<li><p> wage. nominal hourly wage
+</p>
+</li>
+<li><p> t. time trend = 1, 2 , 3, ...
+</p>
+</li>
+<li><p> lprice. log(price)
+</p>
+</li>
+<li><p> lwage. log(wage)
+</p>
+</li>
+<li><p> gprice. lprice - lprice[_n-1]
+</p>
+</li>
+<li><p> gwage. lwage - lwage[_n-1]
+</p>
+</li>
+<li><p> gwage_1. gwage[_n-1]
+</p>
+</li>
+<li><p> gwage_2. gwage[_n-2]
+</p>
+</li>
+<li><p> gwage_3. 
+</p>
+</li>
+<li><p> gwage_4. 
+</p>
+</li>
+<li><p> gwage_5. 
+</p>
+</li>
+<li><p> gwage_6. 
+</p>
+</li>
+<li><p> gwage_7. 
+</p>
+</li>
+<li><p> gwage_8. 
+</p>
+</li>
+<li><p> gwage_9. 
+</p>
+</li>
+<li><p> gwage_10. 
+</p>
+</li>
+<li><p> gwage_11. 
+</p>
+</li>
+<li><p> gwage_12. 
+</p>
+</li>
+<li><p> gprice_1. gprice[_n-1]
+</p>
+</li></ul>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(wageprc)
+</pre>
+
+
+</body></html>

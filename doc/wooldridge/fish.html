@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: fish</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for fish"><tr><td>fish</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>fish</h2>
+
+<h3>Description</h3>
+
+<p>Data loads lazily. Type data(fish) into the console.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+data(fish)
+</pre>
+
+
+<h3>Format</h3>
+
+<p>A data.frame with 97 rows and 20 variables:
+</p>
+
+<ul>
+<li><p> prca. price for Asian buyers
+</p>
+</li>
+<li><p> prcw. price for white buyers
+</p>
+</li>
+<li><p> qtya. quantity sold to Asians
+</p>
+</li>
+<li><p> qtyw. quantity sold to whites
+</p>
+</li>
+<li><p> mon. =1 if Monday
+</p>
+</li>
+<li><p> tues. =1 if Tuesday
+</p>
+</li>
+<li><p> wed. =1 if Wednesday
+</p>
+</li>
+<li><p> thurs. =1 if Thursday
+</p>
+</li>
+<li><p> speed2. min past 2 days wind speeds
+</p>
+</li>
+<li><p> wave2. avg max last 2 days wave height
+</p>
+</li>
+<li><p> speed3. 3 day lagged max windspeed
+</p>
+</li>
+<li><p> wave3. avg max wave hghts of 3 &amp; 4 day lagged hghts
+</p>
+</li>
+<li><p> avgprc. ((prca*qtya) + (prcw*qtyw))/(qtya + qtyw)
+</p>
+</li>
+<li><p> totqty. qtya + qtyw
+</p>
+</li>
+<li><p> lavgprc. log(avgprc)
+</p>
+</li>
+<li><p> ltotqty. log(totqty)
+</p>
+</li>
+<li><p> t. time trend
+</p>
+</li>
+<li><p> lavgp_1. lavgprc[_n-1]
+</p>
+</li>
+<li><p> gavgprc. lavgprc - lavgp_1
+</p>
+</li>
+<li><p> gavgp_1. gavgprc[_n-1]
+</p>
+</li></ul>
+
+
+<h3>Source</h3>
+
+<p><a href="https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041">https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&amp;product_isbn_issn=9781111531041</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+ str(fish)
+</pre>
+
+
+</body></html>
