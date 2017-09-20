@@ -1,6 +1,6 @@
 dataset_r2py 
 ========
-[https://travis-ci.org/Arvinds-ds/datasets_r2py.svg?branch=master]
+![build](https://travis-ci.org/Arvinds-ds/datasets_r2py.svg?branch=master)
 
 ``dataset_r2py`` is a automated script to generate `observations`  (edwardlib/observations) ready  python files and corresponding unit test files for a collection of 1100+ datasets (1100 python files) that were originally distributed alongside the statistical software environment ``R`` and some of its add-on packages. 
 
