@@ -57,12 +57,12 @@ def lbwgrp(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "lbwgrp.csv"
+  filename = 'lbwgrp.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/COUNT/lbwgrp.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/COUNT/lbwgrp.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="lbwgrp.csv",
+                               save_file_name='lbwgrp.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

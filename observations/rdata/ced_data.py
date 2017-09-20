@@ -57,12 +57,12 @@ def ced_data(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "ced_data.csv"
+  filename = 'ced_data.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/mediation/CEDdata.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/mediation/CEDdata.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="ced_data.csv",
+                               save_file_name='ced_data.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

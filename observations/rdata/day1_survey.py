@@ -83,12 +83,12 @@ def day1_survey(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "day1_survey.csv"
+  filename = 'day1_survey.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/Day1Survey.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/Day1Survey.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="day1_survey.csv",
+                               save_file_name='day1_survey.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

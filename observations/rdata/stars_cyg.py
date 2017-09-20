@@ -52,12 +52,12 @@ def stars_cyg(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "stars_cyg.csv"
+  filename = 'stars_cyg.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/robustbase/starsCYG.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/robustbase/starsCYG.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="stars_cyg.csv",
+                               save_file_name='stars_cyg.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

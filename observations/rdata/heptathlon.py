@@ -57,12 +57,12 @@ def heptathlon(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "heptathlon.csv"
+  filename = 'heptathlon.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/HSAUR/heptathlon.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/HSAUR/heptathlon.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="heptathlon.csv",
+                               save_file_name='heptathlon.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

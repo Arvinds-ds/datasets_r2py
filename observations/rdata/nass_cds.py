@@ -91,12 +91,12 @@ def nass_cds(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "nass_cds.csv"
+  filename = 'nass_cds.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/DAAG/nassCDS.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/DAAG/nassCDS.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="nass_cds.csv",
+                               save_file_name='nass_cds.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

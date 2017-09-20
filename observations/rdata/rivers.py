@@ -33,12 +33,12 @@ def rivers(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "rivers.csv"
+  filename = 'rivers.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/datasets/rivers.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/datasets/rivers.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="rivers.csv",
+                               save_file_name='rivers.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

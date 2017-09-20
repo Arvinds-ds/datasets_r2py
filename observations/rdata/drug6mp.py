@@ -49,12 +49,12 @@ def drug6mp(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "drug6mp.csv"
+  filename = 'drug6mp.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/KMsurv/drug6mp.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/KMsurv/drug6mp.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="drug6mp.csv",
+                               save_file_name='drug6mp.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

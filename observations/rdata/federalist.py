@@ -47,12 +47,12 @@ def federalist(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "federalist.csv"
+  filename = 'federalist.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/vcd/Federalist.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/vcd/Federalist.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="federalist.csv",
+                               save_file_name='federalist.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

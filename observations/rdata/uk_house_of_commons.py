@@ -74,12 +74,12 @@ def uk_house_of_commons(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "uk_house_of_commons.csv"
+  filename = 'uk_house_of_commons.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/pscl/UKHouseOfCommons.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/pscl/UKHouseOfCommons.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="uk_house_of_commons.csv",
+                               save_file_name='uk_house_of_commons.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

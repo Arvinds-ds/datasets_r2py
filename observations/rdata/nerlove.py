@@ -69,12 +69,12 @@ def nerlove(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "nerlove.csv"
+  filename = 'nerlove.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/Nerlove.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/Nerlove.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="nerlove.csv",
+                               save_file_name='nerlove.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

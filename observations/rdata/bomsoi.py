@@ -104,12 +104,12 @@ def bomsoi(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "bomsoi.csv"
+  filename = 'bomsoi.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/DAAG/bomsoi.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/DAAG/bomsoi.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="bomsoi.csv",
+                               save_file_name='bomsoi.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

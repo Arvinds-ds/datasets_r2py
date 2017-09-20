@@ -54,12 +54,12 @@ def quine(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "quine.csv"
+  filename = 'quine.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/MASS/quine.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/MASS/quine.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="quine.csv",
+                               save_file_name='quine.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

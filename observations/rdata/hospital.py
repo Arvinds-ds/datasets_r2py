@@ -44,12 +44,12 @@ def hospital(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "hospital.csv"
+  filename = 'hospital.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/vcd/Hospital.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/vcd/Hospital.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="hospital.csv",
+                               save_file_name='hospital.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

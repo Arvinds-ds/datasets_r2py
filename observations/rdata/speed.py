@@ -45,12 +45,12 @@ def speed(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "speed.csv"
+  filename = 'speed.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/Speed.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/Speed.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="speed.csv",
+                               save_file_name='speed.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

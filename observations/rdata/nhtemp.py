@@ -33,12 +33,12 @@ def nhtemp(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "nhtemp.csv"
+  filename = 'nhtemp.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/datasets/nhtemp.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/datasets/nhtemp.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="nhtemp.csv",
+                               save_file_name='nhtemp.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

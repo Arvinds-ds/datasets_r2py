@@ -71,12 +71,12 @@ def us_tax_words(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "us_tax_words.csv"
+  filename = 'us_tax_words.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/UStaxWords.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/UStaxWords.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="us_tax_words.csv",
+                               save_file_name='us_tax_words.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -44,12 +44,12 @@ def final_four_long(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "final_four_long.csv"
+  filename = 'final_four_long.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/FinalFourLong.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/FinalFourLong.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="final_four_long.csv",
+                               save_file_name='final_four_long.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

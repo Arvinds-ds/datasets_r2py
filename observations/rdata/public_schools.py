@@ -39,12 +39,12 @@ def public_schools(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "public_schools.csv"
+  filename = 'public_schools.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/sandwich/PublicSchools.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/sandwich/PublicSchools.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="public_schools.csv",
+                               save_file_name='public_schools.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

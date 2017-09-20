@@ -47,12 +47,12 @@ def ten_mile_race(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "ten_mile_race.csv"
+  filename = 'ten_mile_race.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/mosaicData/TenMileRace.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/mosaicData/TenMileRace.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="ten_mile_race.csv",
+                               save_file_name='ten_mile_race.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

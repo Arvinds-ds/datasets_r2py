@@ -41,12 +41,12 @@ def condroz(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "condroz.csv"
+  filename = 'condroz.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/robustbase/condroz.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/robustbase/condroz.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="condroz.csv",
+                               save_file_name='condroz.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

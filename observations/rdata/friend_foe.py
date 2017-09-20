@@ -83,12 +83,12 @@ def friend_foe(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "friend_foe.csv"
+  filename = 'friend_foe.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/FriendFoe.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/FriendFoe.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="friend_foe.csv",
+                               save_file_name='friend_foe.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

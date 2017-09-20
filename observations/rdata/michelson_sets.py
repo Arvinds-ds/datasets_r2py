@@ -53,12 +53,12 @@ def michelson_sets(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "michelson_sets.csv"
+  filename = 'michelson_sets.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/HistData/MichelsonSets.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/HistData/MichelsonSets.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="michelson_sets.csv",
+                               save_file_name='michelson_sets.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

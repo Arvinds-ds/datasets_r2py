@@ -122,12 +122,12 @@ def prison(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "prison.csv"
+  filename = 'prison.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/wooldridge/prison.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/wooldridge/prison.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="prison.csv",
+                               save_file_name='prison.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

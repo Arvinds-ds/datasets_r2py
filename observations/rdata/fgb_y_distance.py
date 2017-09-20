@@ -60,12 +60,12 @@ def fgb_y_distance(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "fgb_y_distance.csv"
+  filename = 'fgb_y_distance.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/FGByDistance.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/FGByDistance.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="fgb_y_distance.csv",
+                               save_file_name='fgb_y_distance.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -43,12 +43,12 @@ def tobin(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "tobin.csv"
+  filename = 'tobin.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/survival/tobin.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/survival/tobin.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="tobin.csv",
+                               save_file_name='tobin.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

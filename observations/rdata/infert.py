@@ -70,12 +70,12 @@ def infert(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "infert.csv"
+  filename = 'infert.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/datasets/infert.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/datasets/infert.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="infert.csv",
+                               save_file_name='infert.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

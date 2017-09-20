@@ -43,12 +43,12 @@ def whickham(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "whickham.csv"
+  filename = 'whickham.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/mosaicData/Whickham.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/mosaicData/Whickham.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="whickham.csv",
+                               save_file_name='whickham.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

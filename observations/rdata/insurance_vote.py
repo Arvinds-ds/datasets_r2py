@@ -73,12 +73,12 @@ def insurance_vote(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "insurance_vote.csv"
+  filename = 'insurance_vote.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/InsuranceVote.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/InsuranceVote.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="insurance_vote.csv",
+                               save_file_name='insurance_vote.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

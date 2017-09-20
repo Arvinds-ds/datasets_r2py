@@ -46,12 +46,12 @@ def mendel_abc(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "mendel_abc.csv"
+  filename = 'mendel_abc.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/hwde/mendelABC.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/hwde/mendelABC.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="mendel_abc.csv",
+                               save_file_name='mendel_abc.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

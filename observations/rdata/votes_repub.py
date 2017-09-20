@@ -35,12 +35,12 @@ def votes_repub(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "votes_repub.csv"
+  filename = 'votes_repub.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/cluster/votes.repub.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/cluster/votes.repub.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="votes_repub.csv",
+                               save_file_name='votes_repub.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

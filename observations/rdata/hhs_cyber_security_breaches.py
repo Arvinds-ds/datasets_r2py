@@ -89,12 +89,12 @@ def hhs_cyber_security_breaches(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "hhs_cyber_security_breaches.csv"
+  filename = 'hhs_cyber_security_breaches.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/HHSCyberSecurityBreaches.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/HHSCyberSecurityBreaches.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="hhs_cyber_security_breaches.csv",
+                               save_file_name='hhs_cyber_security_breaches.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

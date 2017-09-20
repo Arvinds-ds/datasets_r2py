@@ -38,12 +38,12 @@ def cooling_water(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "cooling_water.csv"
+  filename = 'cooling_water.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/mosaicData/CoolingWater.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/mosaicData/CoolingWater.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="cooling_water.csv",
+                               save_file_name='cooling_water.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

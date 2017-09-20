@@ -81,12 +81,12 @@ def hurric_named(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "hurric_named.csv"
+  filename = 'hurric_named.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/DAAG/hurricNamed.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/DAAG/hurricNamed.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="hurric_named.csv",
+                               save_file_name='hurric_named.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

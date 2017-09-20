@@ -56,12 +56,12 @@ def infmrt(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "infmrt.csv"
+  filename = 'infmrt.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/wooldridge/infmrt.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/wooldridge/infmrt.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="infmrt.csv",
+                               save_file_name='infmrt.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -70,12 +70,12 @@ def us_finance_industry(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "us_finance_industry.csv"
+  filename = 'us_finance_industry.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/USFinanceIndustry.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/USFinanceIndustry.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="us_finance_industry.csv",
+                               save_file_name='us_finance_industry.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -41,12 +41,12 @@ def cloth(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "cloth.csv"
+  filename = 'cloth.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/boot/cloth.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/boot/cloth.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="cloth.csv",
+                               save_file_name='cloth.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -54,12 +54,12 @@ def strike_nb(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "strike_nb.csv"
+  filename = 'strike_nb.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/StrikeNb.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/StrikeNb.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="strike_nb.csv",
+                               save_file_name='strike_nb.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

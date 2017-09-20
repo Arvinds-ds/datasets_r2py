@@ -47,12 +47,12 @@ def bio_chemists(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "bio_chemists.csv"
+  filename = 'bio_chemists.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/pscl/bioChemists.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/pscl/bioChemists.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="bio_chemists.csv",
+                               save_file_name='bio_chemists.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

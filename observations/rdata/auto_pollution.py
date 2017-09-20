@@ -49,12 +49,12 @@ def auto_pollution(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "auto_pollution.csv"
+  filename = 'auto_pollution.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/AutoPollution.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/AutoPollution.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="auto_pollution.csv",
+                               save_file_name='auto_pollution.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

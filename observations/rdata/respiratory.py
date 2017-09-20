@@ -59,12 +59,12 @@ def respiratory(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "respiratory.csv"
+  filename = 'respiratory.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/HSAUR/respiratory.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/HSAUR/respiratory.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="respiratory.csv",
+                               save_file_name='respiratory.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

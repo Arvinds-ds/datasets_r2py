@@ -49,12 +49,12 @@ def davis(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "davis.csv"
+  filename = 'davis.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/car/Davis.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/car/Davis.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="davis.csv",
+                               save_file_name='davis.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

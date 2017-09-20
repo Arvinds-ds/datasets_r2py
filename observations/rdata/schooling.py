@@ -127,12 +127,12 @@ def schooling(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "schooling.csv"
+  filename = 'schooling.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/Schooling.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/Schooling.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="schooling.csv",
+                               save_file_name='schooling.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

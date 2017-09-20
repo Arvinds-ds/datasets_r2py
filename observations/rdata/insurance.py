@@ -58,12 +58,12 @@ def insurance(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "insurance.csv"
+  filename = 'insurance.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/MASS/Insurance.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/MASS/Insurance.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="insurance.csv",
+                               save_file_name='insurance.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

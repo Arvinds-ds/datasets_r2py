@@ -58,12 +58,12 @@ def labor_supply(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "labor_supply.csv"
+  filename = 'labor_supply.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/LaborSupply.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/LaborSupply.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="labor_supply.csv",
+                               save_file_name='labor_supply.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

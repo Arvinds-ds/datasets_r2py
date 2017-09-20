@@ -56,12 +56,12 @@ def stagec(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "stagec.csv"
+  filename = 'stagec.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/rpart/stagec.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/rpart/stagec.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="stagec.csv",
+                               save_file_name='stagec.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

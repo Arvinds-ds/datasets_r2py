@@ -60,12 +60,12 @@ def rice(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "rice.csv"
+  filename = 'rice.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/DAAG/rice.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/DAAG/rice.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="rice.csv",
+                               save_file_name='rice.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

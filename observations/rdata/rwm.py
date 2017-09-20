@@ -46,12 +46,12 @@ def rwm(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "rwm.csv"
+  filename = 'rwm.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/COUNT/rwm.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/COUNT/rwm.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="rwm.csv",
+                               save_file_name='rwm.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

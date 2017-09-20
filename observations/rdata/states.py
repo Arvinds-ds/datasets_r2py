@@ -62,12 +62,12 @@ def states(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "states.csv"
+  filename = 'states.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/car/States.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/car/States.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="states.csv",
+                               save_file_name='states.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

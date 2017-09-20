@@ -50,12 +50,12 @@ def chemo_thc(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "chemo_thc.csv"
+  filename = 'chemo_thc.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/ChemoTHC.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/ChemoTHC.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="chemo_thc.csv",
+                               save_file_name='chemo_thc.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

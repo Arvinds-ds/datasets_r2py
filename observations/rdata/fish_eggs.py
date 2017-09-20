@@ -49,12 +49,12 @@ def fish_eggs(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "fish_eggs.csv"
+  filename = 'fish_eggs.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/FishEggs.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/FishEggs.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="fish_eggs.csv",
+                               save_file_name='fish_eggs.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

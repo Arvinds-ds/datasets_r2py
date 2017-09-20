@@ -88,12 +88,12 @@ def cushny_peebles(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "cushny_peebles.csv"
+  filename = 'cushny_peebles.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/HistData/CushnyPeebles.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/HistData/CushnyPeebles.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="cushny_peebles.csv",
+                               save_file_name='cushny_peebles.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -41,12 +41,12 @@ def un_gdp_infant_mortality(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "un_gdp_infant_mortality.csv"
+  filename = 'un_gdp_infant_mortality.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/car/UN.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/car/UN.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="un_gdp_infant_mortality.csv",
+                               save_file_name='un_gdp_infant_mortality.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

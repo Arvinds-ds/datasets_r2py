@@ -38,12 +38,12 @@ def holzinger_9(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "holzinger_9.csv"
+  filename = 'holzinger_9.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/psych/Holzinger.9.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/psych/Holzinger.9.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="holzinger_9.csv",
+                               save_file_name='holzinger_9.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -45,12 +45,12 @@ def sunspot_year(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "sunspot_year.csv"
+  filename = 'sunspot_year.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/datasets/sunspot.year.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/datasets/sunspot.year.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="sunspot_year.csv",
+                               save_file_name='sunspot_year.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

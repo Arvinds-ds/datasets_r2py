@@ -54,12 +54,12 @@ def transp_eq(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "transp_eq.csv"
+  filename = 'transp_eq.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/TranspEq.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/TranspEq.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="transp_eq.csv",
+                               save_file_name='transp_eq.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

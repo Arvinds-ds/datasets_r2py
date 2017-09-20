@@ -69,12 +69,12 @@ def medpar(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "medpar.csv"
+  filename = 'medpar.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/COUNT/medpar.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/COUNT/medpar.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="medpar.csv",
+                               save_file_name='medpar.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

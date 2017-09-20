@@ -105,12 +105,12 @@ def help_miss(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "help_miss.csv"
+  filename = 'help_miss.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/mosaicData/HELPmiss.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/mosaicData/HELPmiss.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="help_miss.csv",
+                               save_file_name='help_miss.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

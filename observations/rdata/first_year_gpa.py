@@ -74,12 +74,12 @@ def first_year_gpa(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "first_year_gpa.csv"
+  filename = 'first_year_gpa.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/FirstYearGPA.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/FirstYearGPA.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="first_year_gpa.csv",
+                               save_file_name='first_year_gpa.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

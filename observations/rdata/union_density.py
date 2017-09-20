@@ -66,12 +66,12 @@ def union_density(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "union_density.csv"
+  filename = 'union_density.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/pscl/unionDensity.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/pscl/unionDensity.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="union_density.csv",
+                               save_file_name='union_density.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

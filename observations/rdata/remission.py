@@ -44,12 +44,12 @@ def remission(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "remission.csv"
+  filename = 'remission.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/boot/remission.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/boot/remission.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="remission.csv",
+                               save_file_name='remission.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

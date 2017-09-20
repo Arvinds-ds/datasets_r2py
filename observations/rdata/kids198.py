@@ -52,12 +52,12 @@ def kids198(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "kids198.csv"
+  filename = 'kids198.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/Kids198.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/Kids198.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="kids198.csv",
+                               save_file_name='kids198.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -96,12 +96,12 @@ def german(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "german.csv"
+  filename = 'german.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/gamclass/german.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/gamclass/german.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="german.csv",
+                               save_file_name='german.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

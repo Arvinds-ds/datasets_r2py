@@ -37,12 +37,12 @@ def sanction(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "sanction.csv"
+  filename = 'sanction.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Zelig/sanction.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Zelig/sanction.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="sanction.csv",
+                               save_file_name='sanction.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

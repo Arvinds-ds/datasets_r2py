@@ -58,12 +58,12 @@ def us_judge_ratings(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "us_judge_ratings.csv"
+  filename = 'us_judge_ratings.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/datasets/USJudgeRatings.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/datasets/USJudgeRatings.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="us_judge_ratings.csv",
+                               save_file_name='us_judge_ratings.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

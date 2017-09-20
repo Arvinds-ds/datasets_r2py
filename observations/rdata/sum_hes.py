@@ -61,12 +61,12 @@ def sum_hes(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "sum_hes.csv"
+  filename = 'sum_hes.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/plm/SumHes.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/plm/SumHes.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="sum_hes.csv",
+                               save_file_name='sum_hes.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

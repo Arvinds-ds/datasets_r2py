@@ -53,12 +53,12 @@ def ketchup(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "ketchup.csv"
+  filename = 'ketchup.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/Ketchup.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/Ketchup.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="ketchup.csv",
+                               save_file_name='ketchup.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -72,12 +72,12 @@ def budget_uk(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "budget_uk.csv"
+  filename = 'budget_uk.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/BudgetUK.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/BudgetUK.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="budget_uk.csv",
+                               save_file_name='budget_uk.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

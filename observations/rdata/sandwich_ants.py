@@ -54,12 +54,12 @@ def sandwich_ants(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "sandwich_ants.csv"
+  filename = 'sandwich_ants.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/SandwichAnts.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/SandwichAnts.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="sandwich_ants.csv",
+                               save_file_name='sandwich_ants.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

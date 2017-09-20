@@ -150,12 +150,12 @@ def crime4(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "crime4.csv"
+  filename = 'crime4.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/wooldridge/crime4.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/wooldridge/crime4.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="crime4.csv",
+                               save_file_name='crime4.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

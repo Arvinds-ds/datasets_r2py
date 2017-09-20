@@ -50,12 +50,12 @@ def transplant(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "transplant.csv"
+  filename = 'transplant.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/survival/transplant.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/survival/transplant.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="transplant.csv",
+                               save_file_name='transplant.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

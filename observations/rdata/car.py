@@ -89,12 +89,12 @@ def car(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "car.csv"
+  filename = 'car.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/Car.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/Car.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="car.csv",
+                               save_file_name='car.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

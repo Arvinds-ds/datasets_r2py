@@ -42,12 +42,12 @@ def wine(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "wine.csv"
+  filename = 'wine.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/wooldridge/wine.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/wooldridge/wine.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="wine.csv",
+                               save_file_name='wine.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

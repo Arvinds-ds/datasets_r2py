@@ -25,11 +25,11 @@ def {{function}}(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "{{file_name}}"
+  filename = '{{file_name}}'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "{{url}}"
+    url = '{{url}}'
     maybe_download_and_extract(path, url,
-                               save_file_name="{{file_name}}",
+                               save_file_name='{{file_name}}',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

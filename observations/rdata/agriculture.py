@@ -43,12 +43,12 @@ def agriculture(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "agriculture.csv"
+  filename = 'agriculture.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/cluster/agriculture.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/cluster/agriculture.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="agriculture.csv",
+                               save_file_name='agriculture.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

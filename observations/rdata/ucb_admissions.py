@@ -42,12 +42,12 @@ def ucb_admissions(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "ucb_admissions.csv"
+  filename = 'ucb_admissions.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/datasets/UCBAdmissions.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/datasets/UCBAdmissions.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="ucb_admissions.csv",
+                               save_file_name='ucb_admissions.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -55,12 +55,12 @@ def ovarian(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "ovarian.csv"
+  filename = 'ovarian.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/survival/ovarian.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/survival/ovarian.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="ovarian.csv",
+                               save_file_name='ovarian.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

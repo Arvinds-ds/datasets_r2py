@@ -44,12 +44,12 @@ def houseprices(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "houseprices.csv"
+  filename = 'houseprices.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/DAAG/houseprices.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/DAAG/houseprices.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="houseprices.csv",
+                               save_file_name='houseprices.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

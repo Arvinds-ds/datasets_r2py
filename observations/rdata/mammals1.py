@@ -51,12 +51,12 @@ def mammals1(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "mammals1.csv"
+  filename = 'mammals1.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/quantreg/Mammals.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/quantreg/Mammals.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="mammals1.csv",
+                               save_file_name='mammals1.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -205,12 +205,12 @@ def incidents_by_country_yr(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "incidents_by_country_yr.csv"
+  filename = 'incidents_by_country_yr.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/incidents.byCountryYr.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/incidents.byCountryYr.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="incidents_by_country_yr.csv",
+                               save_file_name='incidents_by_country_yr.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

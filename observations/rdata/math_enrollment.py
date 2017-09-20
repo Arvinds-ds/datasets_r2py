@@ -43,12 +43,12 @@ def math_enrollment(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "math_enrollment.csv"
+  filename = 'math_enrollment.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/MathEnrollment.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/MathEnrollment.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="math_enrollment.csv",
+                               save_file_name='math_enrollment.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

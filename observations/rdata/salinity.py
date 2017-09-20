@@ -58,12 +58,12 @@ def salinity(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "salinity.csv"
+  filename = 'salinity.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/boot/salinity.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/boot/salinity.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="salinity.csv",
+                               save_file_name='salinity.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

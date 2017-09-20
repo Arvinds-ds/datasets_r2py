@@ -58,12 +58,12 @@ def gasoline(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "gasoline.csv"
+  filename = 'gasoline.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/Gasoline.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/Gasoline.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="gasoline.csv",
+                               save_file_name='gasoline.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -53,12 +53,12 @@ def halley_life_table(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "halley_life_table.csv"
+  filename = 'halley_life_table.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/HistData/HalleyLifeTable.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/HistData/HalleyLifeTable.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="halley_life_table.csv",
+                               save_file_name='halley_life_table.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

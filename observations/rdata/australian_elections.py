@@ -105,12 +105,12 @@ def australian_elections(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "australian_elections.csv"
+  filename = 'australian_elections.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/pscl/AustralianElections.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/pscl/AustralianElections.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="australian_elections.csv",
+                               save_file_name='australian_elections.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

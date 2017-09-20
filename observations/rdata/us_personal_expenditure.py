@@ -35,12 +35,12 @@ def us_personal_expenditure(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "us_personal_expenditure.csv"
+  filename = 'us_personal_expenditure.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/datasets/USPersonalExpenditure.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/datasets/USPersonalExpenditure.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="us_personal_expenditure.csv",
+                               save_file_name='us_personal_expenditure.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

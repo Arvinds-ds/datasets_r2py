@@ -81,12 +81,12 @@ def hi_hours_worked(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "hi_hours_worked.csv"
+  filename = 'hi_hours_worked.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/HI.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/HI.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="hi_hours_worked.csv",
+                               save_file_name='hi_hours_worked.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

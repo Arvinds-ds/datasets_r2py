@@ -53,12 +53,12 @@ def grunfeld(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "grunfeld.csv"
+  filename = 'grunfeld.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/Grunfeld.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/Grunfeld.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="grunfeld.csv",
+                               save_file_name='grunfeld.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

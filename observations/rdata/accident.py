@@ -50,12 +50,12 @@ def accident(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "accident.csv"
+  filename = 'accident.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/Accident.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/Accident.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="accident.csv",
+                               save_file_name='accident.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

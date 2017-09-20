@@ -48,12 +48,12 @@ def word_memory(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "word_memory.csv"
+  filename = 'word_memory.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/WordMemory.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/WordMemory.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="word_memory.csv",
+                               save_file_name='word_memory.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

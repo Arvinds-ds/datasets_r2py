@@ -105,12 +105,12 @@ def std(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "std.csv"
+  filename = 'std.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/KMsurv/std.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/KMsurv/std.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="std.csv",
+                               save_file_name='std.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

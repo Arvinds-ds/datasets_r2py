@@ -54,12 +54,12 @@ def claridge(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "claridge.csv"
+  filename = 'claridge.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/boot/claridge.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/boot/claridge.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="claridge.csv",
+                               save_file_name='claridge.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

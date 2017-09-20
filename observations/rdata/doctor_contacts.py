@@ -82,12 +82,12 @@ def doctor_contacts(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "doctor_contacts.csv"
+  filename = 'doctor_contacts.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/DoctorContacts.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/DoctorContacts.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="doctor_contacts.csv",
+                               save_file_name='doctor_contacts.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

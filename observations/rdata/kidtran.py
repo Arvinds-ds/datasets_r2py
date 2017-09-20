@@ -51,12 +51,12 @@ def kidtran(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "kidtran.csv"
+  filename = 'kidtran.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/KMsurv/kidtran.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/KMsurv/kidtran.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="kidtran.csv",
+                               save_file_name='kidtran.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

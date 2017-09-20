@@ -58,12 +58,12 @@ def prestige(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "prestige.csv"
+  filename = 'prestige.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/car/Prestige.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/car/Prestige.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="prestige.csv",
+                               save_file_name='prestige.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

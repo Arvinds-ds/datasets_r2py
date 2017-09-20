@@ -38,12 +38,12 @@ def audit(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "audit.csv"
+  filename = 'audit.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/wooldridge/audit.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/wooldridge/audit.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="audit.csv",
+                               save_file_name='audit.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

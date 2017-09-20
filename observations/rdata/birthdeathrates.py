@@ -39,12 +39,12 @@ def birthdeathrates(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "birthdeathrates.csv"
+  filename = 'birthdeathrates.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/HSAUR/birthdeathrates.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/HSAUR/birthdeathrates.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="birthdeathrates.csv",
+                               save_file_name='birthdeathrates.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

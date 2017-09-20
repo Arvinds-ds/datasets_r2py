@@ -85,12 +85,12 @@ def minard_troops(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "minard_troops.csv"
+  filename = 'minard_troops.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/HistData/Minard.troops.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/HistData/Minard.troops.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="minard_troops.csv",
+                               save_file_name='minard_troops.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

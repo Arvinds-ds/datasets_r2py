@@ -81,12 +81,12 @@ def wage(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "wage.csv"
+  filename = 'wage.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/ISLR/Wage.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/ISLR/Wage.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="wage.csv",
+                               save_file_name='wage.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

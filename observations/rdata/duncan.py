@@ -51,12 +51,12 @@ def duncan(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "duncan.csv"
+  filename = 'duncan.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/car/Duncan.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/car/Duncan.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="duncan.csv",
+                               save_file_name='duncan.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

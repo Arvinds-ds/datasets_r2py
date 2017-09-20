@@ -67,12 +67,12 @@ def pima_tr(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "pima_tr.csv"
+  filename = 'pima_tr.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/MASS/Pima.tr.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/MASS/Pima.tr.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="pima_tr.csv",
+                               save_file_name='pima_tr.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

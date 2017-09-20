@@ -32,12 +32,12 @@ def lukas(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "lukas.csv"
+  filename = 'lukas.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/gap/lukas.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/gap/lukas.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="lukas.csv",
+                               save_file_name='lukas.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

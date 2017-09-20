@@ -60,12 +60,12 @@ def airfare(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "airfare.csv"
+  filename = 'airfare.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/wooldridge/airfare.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/wooldridge/airfare.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="airfare.csv",
+                               save_file_name='airfare.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

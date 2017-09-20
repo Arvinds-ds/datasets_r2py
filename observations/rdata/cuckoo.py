@@ -43,12 +43,12 @@ def cuckoo(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "cuckoo.csv"
+  filename = 'cuckoo.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/Cuckoo.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/Cuckoo.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="cuckoo.csv",
+                               save_file_name='cuckoo.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

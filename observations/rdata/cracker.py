@@ -59,12 +59,12 @@ def cracker(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "cracker.csv"
+  filename = 'cracker.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/Cracker.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/Cracker.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="cracker.csv",
+                               save_file_name='cracker.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

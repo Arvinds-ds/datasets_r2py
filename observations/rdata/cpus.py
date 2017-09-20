@@ -62,12 +62,12 @@ def cpus(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "cpus.csv"
+  filename = 'cpus.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/MASS/cpus.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/MASS/cpus.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="cpus.csv",
+                               save_file_name='cpus.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

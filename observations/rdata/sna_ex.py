@@ -34,12 +34,12 @@ def sna_ex(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "sna_ex.csv"
+  filename = 'sna_ex.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Zelig/sna.ex.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Zelig/sna.ex.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="sna_ex.csv",
+                               save_file_name='sna_ex.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

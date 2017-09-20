@@ -97,12 +97,12 @@ def income_inequality(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "income_inequality.csv"
+  filename = 'income_inequality.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/incomeInequality.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/incomeInequality.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="income_inequality.csv",
+                               save_file_name='income_inequality.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

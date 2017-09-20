@@ -37,12 +37,12 @@ def immi3(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "immi3.csv"
+  filename = 'immi3.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Zelig/immi3.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Zelig/immi3.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="immi3.csv",
+                               save_file_name='immi3.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

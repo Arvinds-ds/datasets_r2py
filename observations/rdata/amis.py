@@ -64,12 +64,12 @@ def amis(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "amis.csv"
+  filename = 'amis.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/boot/amis.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/boot/amis.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="amis.csv",
+                               save_file_name='amis.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

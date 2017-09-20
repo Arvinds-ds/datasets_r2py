@@ -39,12 +39,12 @@ def us_stamps(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "us_stamps.csv"
+  filename = 'us_stamps.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/USstamps.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/USstamps.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="us_stamps.csv",
+                               save_file_name='us_stamps.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

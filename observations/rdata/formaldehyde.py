@@ -42,12 +42,12 @@ def formaldehyde(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "formaldehyde.csv"
+  filename = 'formaldehyde.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/datasets/Formaldehyde.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/datasets/Formaldehyde.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="formaldehyde.csv",
+                               save_file_name='formaldehyde.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

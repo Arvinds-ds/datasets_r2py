@@ -30,12 +30,12 @@ def nidd_annual(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "nidd_annual.csv"
+  filename = 'nidd_annual.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/evir/nidd.annual.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/evir/nidd.annual.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="nidd_annual.csv",
+                               save_file_name='nidd_annual.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

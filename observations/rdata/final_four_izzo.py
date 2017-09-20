@@ -48,12 +48,12 @@ def final_four_izzo(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "final_four_izzo.csv"
+  filename = 'final_four_izzo.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/FinalFourIzzo.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/FinalFourIzzo.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="final_four_izzo.csv",
+                               save_file_name='final_four_izzo.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

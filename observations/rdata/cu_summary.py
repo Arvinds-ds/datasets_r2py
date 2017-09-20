@@ -60,12 +60,12 @@ def cu_summary(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "cu_summary.csv"
+  filename = 'cu_summary.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/rpart/cu.summary.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/rpart/cu.summary.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="cu_summary.csv",
+                               save_file_name='cu_summary.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

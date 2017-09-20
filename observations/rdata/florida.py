@@ -67,12 +67,12 @@ def florida(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "florida.csv"
+  filename = 'florida.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/car/Florida.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/car/Florida.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="florida.csv",
+                               save_file_name='florida.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

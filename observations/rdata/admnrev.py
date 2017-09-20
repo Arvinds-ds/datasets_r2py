@@ -42,12 +42,12 @@ def admnrev(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "admnrev.csv"
+  filename = 'admnrev.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/wooldridge/admnrev.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/wooldridge/admnrev.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="admnrev.csv",
+                               save_file_name='admnrev.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

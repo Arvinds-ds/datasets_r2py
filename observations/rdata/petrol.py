@@ -60,12 +60,12 @@ def petrol(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "petrol.csv"
+  filename = 'petrol.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/MASS/petrol.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/MASS/petrol.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="petrol.csv",
+                               save_file_name='petrol.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

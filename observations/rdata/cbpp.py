@@ -57,12 +57,12 @@ def cbpp(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "cbpp.csv"
+  filename = 'cbpp.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/lme4/cbpp.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/lme4/cbpp.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="cbpp.csv",
+                               save_file_name='cbpp.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

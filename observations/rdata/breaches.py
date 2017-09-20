@@ -91,12 +91,12 @@ def breaches(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "breaches.csv"
+  filename = 'breaches.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/breaches.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/breaches.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="breaches.csv",
+                               save_file_name='breaches.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

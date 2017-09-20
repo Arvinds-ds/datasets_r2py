@@ -46,12 +46,12 @@ def vocab(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "vocab.csv"
+  filename = 'vocab.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/car/Vocab.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/car/Vocab.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="vocab.csv",
+                               save_file_name='vocab.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

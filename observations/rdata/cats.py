@@ -43,12 +43,12 @@ def cats(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "cats.csv"
+  filename = 'cats.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/MASS/cats.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/MASS/cats.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="cats.csv",
+                               save_file_name='cats.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

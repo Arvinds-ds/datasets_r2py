@@ -74,12 +74,12 @@ def treatment(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "treatment.csv"
+  filename = 'treatment.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/Treatment.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/Treatment.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="treatment.csv",
+                               save_file_name='treatment.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

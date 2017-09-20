@@ -81,12 +81,12 @@ def hdma(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "hdma.csv"
+  filename = 'hdma.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/Hdma.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/Hdma.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="hdma.csv",
+                               save_file_name='hdma.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

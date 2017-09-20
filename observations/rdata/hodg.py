@@ -52,12 +52,12 @@ def hodg(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "hodg.csv"
+  filename = 'hodg.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/KMsurv/hodg.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/KMsurv/hodg.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="hodg.csv",
+                               save_file_name='hodg.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

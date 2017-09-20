@@ -74,12 +74,12 @@ def vietnam_i(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "vietnam_i.csv"
+  filename = 'vietnam_i.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/VietNamI.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/VietNamI.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="vietnam_i.csv",
+                               save_file_name='vietnam_i.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

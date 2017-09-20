@@ -50,12 +50,12 @@ def calcium(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "calcium.csv"
+  filename = 'calcium.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/boot/calcium.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/boot/calcium.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="calcium.csv",
+                               save_file_name='calcium.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

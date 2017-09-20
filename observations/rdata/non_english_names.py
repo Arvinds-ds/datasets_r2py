@@ -46,12 +46,12 @@ def non_english_names(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "non_english_names.csv"
+  filename = 'non_english_names.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/nonEnglishNames.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/nonEnglishNames.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="non_english_names.csv",
+                               save_file_name='non_english_names.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

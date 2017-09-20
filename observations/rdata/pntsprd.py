@@ -56,12 +56,12 @@ def pntsprd(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "pntsprd.csv"
+  filename = 'pntsprd.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/wooldridge/pntsprd.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/wooldridge/pntsprd.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="pntsprd.csv",
+                               save_file_name='pntsprd.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

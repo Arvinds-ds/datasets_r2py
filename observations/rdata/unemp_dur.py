@@ -69,12 +69,12 @@ def unemp_dur(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "unemp_dur.csv"
+  filename = 'unemp_dur.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/UnempDur.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/UnempDur.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="unemp_dur.csv",
+                               save_file_name='unemp_dur.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

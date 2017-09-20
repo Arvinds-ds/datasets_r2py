@@ -40,12 +40,12 @@ def telef(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "telef.csv"
+  filename = 'telef.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/robustbase/telef.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/robustbase/telef.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="telef.csv",
+                               save_file_name='telef.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -52,12 +52,12 @@ def dactyl(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "dactyl.csv"
+  filename = 'dactyl.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/HistData/Dactyl.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/HistData/Dactyl.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="dactyl.csv",
+                               save_file_name='dactyl.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

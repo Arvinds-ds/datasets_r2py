@@ -45,12 +45,12 @@ def can_pop(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "can_pop.csv"
+  filename = 'can_pop.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/car/CanPop.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/car/CanPop.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="can_pop.csv",
+                               save_file_name='can_pop.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

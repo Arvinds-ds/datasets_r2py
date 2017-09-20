@@ -56,12 +56,12 @@ def cran_packages(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "cran_packages.csv"
+  filename = 'cran_packages.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/CRANpackages.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/CRANpackages.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="cran_packages.csv",
+                               save_file_name='cran_packages.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

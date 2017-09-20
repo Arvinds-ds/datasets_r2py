@@ -52,12 +52,12 @@ def rep_vict(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "rep_vict.csv"
+  filename = 'rep_vict.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/vcd/RepVict.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/vcd/RepVict.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="rep_vict.csv",
+                               save_file_name='rep_vict.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

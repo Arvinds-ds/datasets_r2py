@@ -45,12 +45,12 @@ def strike_dur(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "strike_dur.csv"
+  filename = 'strike_dur.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/StrikeDur.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/StrikeDur.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="strike_dur.csv",
+                               save_file_name='strike_dur.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

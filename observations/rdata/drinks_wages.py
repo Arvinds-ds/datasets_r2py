@@ -75,12 +75,12 @@ def drinks_wages(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "drinks_wages.csv"
+  filename = 'drinks_wages.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/HistData/DrinksWages.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/HistData/DrinksWages.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="drinks_wages.csv",
+                               save_file_name='drinks_wages.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

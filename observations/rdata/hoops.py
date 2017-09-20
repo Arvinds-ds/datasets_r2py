@@ -122,12 +122,12 @@ def hoops(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "hoops.csv"
+  filename = 'hoops.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/Hoops.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/Hoops.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="hoops.csv",
+                               save_file_name='hoops.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

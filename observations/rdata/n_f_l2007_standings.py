@@ -72,12 +72,12 @@ def n_f_l2007_standings(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "n_f_l2007_standings.csv"
+  filename = 'n_f_l2007_standings.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/NFL2007Standings.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/NFL2007Standings.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="n_f_l2007_standings.csv",
+                               save_file_name='n_f_l2007_standings.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

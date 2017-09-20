@@ -53,12 +53,12 @@ def road(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "road.csv"
+  filename = 'road.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/MASS/road.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/MASS/road.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="road.csv",
+                               save_file_name='road.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

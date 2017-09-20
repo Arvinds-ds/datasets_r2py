@@ -125,12 +125,12 @@ def snow_dates(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "snow_dates.csv"
+  filename = 'snow_dates.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/HistData/Snow.dates.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/HistData/Snow.dates.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="snow_dates.csv",
+                               save_file_name='snow_dates.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

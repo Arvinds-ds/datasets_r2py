@@ -35,12 +35,12 @@ def lake_huron(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "lake_huron.csv"
+  filename = 'lake_huron.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/datasets/LakeHuron.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/datasets/LakeHuron.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="lake_huron.csv",
+                               save_file_name='lake_huron.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

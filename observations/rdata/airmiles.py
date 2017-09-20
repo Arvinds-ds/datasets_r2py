@@ -33,12 +33,12 @@ def airmiles(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "airmiles.csv"
+  filename = 'airmiles.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/datasets/airmiles.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/datasets/airmiles.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="airmiles.csv",
+                               save_file_name='airmiles.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

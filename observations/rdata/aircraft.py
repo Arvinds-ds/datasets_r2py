@@ -51,12 +51,12 @@ def aircraft(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "aircraft.csv"
+  filename = 'aircraft.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/robustbase/aircraft.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/robustbase/aircraft.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="aircraft.csv",
+                               save_file_name='aircraft.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -90,12 +90,12 @@ def framing(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "framing.csv"
+  filename = 'framing.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/mediation/framing.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/mediation/framing.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="framing.csv",
+                               save_file_name='framing.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

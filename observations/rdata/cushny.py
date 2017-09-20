@@ -43,12 +43,12 @@ def cushny(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "cushny.csv"
+  filename = 'cushny.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/robustbase/cushny.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/robustbase/cushny.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="cushny.csv",
+                               save_file_name='cushny.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

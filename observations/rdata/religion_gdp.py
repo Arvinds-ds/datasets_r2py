@@ -68,12 +68,12 @@ def religion_gdp(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "religion_gdp.csv"
+  filename = 'religion_gdp.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/ReligionGDP.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/ReligionGDP.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="religion_gdp.csv",
+                               save_file_name='religion_gdp.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

@@ -94,12 +94,12 @@ def o_brien_kaiser(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "o_brien_kaiser.csv"
+  filename = 'o_brien_kaiser.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/car/OBrienKaiser.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/car/OBrienKaiser.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="o_brien_kaiser.csv",
+                               save_file_name='o_brien_kaiser.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

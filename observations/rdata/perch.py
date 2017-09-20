@@ -49,12 +49,12 @@ def perch(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "perch.csv"
+  filename = 'perch.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Stat2Data/Perch.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Stat2Data/Perch.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="perch.csv",
+                               save_file_name='perch.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

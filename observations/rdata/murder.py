@@ -58,12 +58,12 @@ def murder(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "murder.csv"
+  filename = 'murder.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/wooldridge/murder.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/wooldridge/murder.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="murder.csv",
+                               save_file_name='murder.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

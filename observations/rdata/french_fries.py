@@ -33,12 +33,12 @@ def french_fries(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "french_fries.csv"
+  filename = 'french_fries.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/reshape2/french_fries.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/reshape2/french_fries.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="french_fries.csv",
+                               save_file_name='french_fries.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

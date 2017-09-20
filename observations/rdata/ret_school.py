@@ -94,12 +94,12 @@ def ret_school(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "ret_school.csv"
+  filename = 'ret_school.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Ecdat/RetSchool.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Ecdat/RetSchool.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="ret_school.csv",
+                               save_file_name='ret_school.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

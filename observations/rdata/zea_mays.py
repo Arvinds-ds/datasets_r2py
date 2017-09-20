@@ -64,12 +64,12 @@ def zea_mays(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "zea_mays.csv"
+  filename = 'zea_mays.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/HistData/ZeaMays.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/HistData/ZeaMays.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="zea_mays.csv",
+                               save_file_name='zea_mays.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

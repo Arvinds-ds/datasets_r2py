@@ -128,7 +128,7 @@ def gen_context(row):
         cols=''
     url = row['csv']
     if len(url) > 62:
-        url = url[:62] + '" \\\n' + ' '*10 + '"' + url[62:]
+        url = url[:62] + "' \\\n" + " "*10 + "'" + url[62:]
     file_name = row['lcitems'] + '.csv'
     try:
         desc = extract_rst(parse_rst(rst_loc))

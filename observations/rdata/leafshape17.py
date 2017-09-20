@@ -60,12 +60,12 @@ def leafshape17(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "leafshape17.csv"
+  filename = 'leafshape17.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/DAAG/leafshape17.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/DAAG/leafshape17.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="leafshape17.csv",
+                               save_file_name='leafshape17.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

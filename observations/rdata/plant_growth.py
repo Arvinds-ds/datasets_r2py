@@ -43,12 +43,12 @@ def plant_growth(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "plant_growth.csv"
+  filename = 'plant_growth.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/datasets/PlantGrowth.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/datasets/PlantGrowth.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="plant_growth.csv",
+                               save_file_name='plant_growth.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

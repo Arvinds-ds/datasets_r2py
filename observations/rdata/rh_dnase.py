@@ -55,12 +55,12 @@ def rh_dnase(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "rh_dnase.csv"
+  filename = 'rh_dnase.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/survival/rhDNase.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/survival/rhDNase.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="rh_dnase.csv",
+                               save_file_name='rh_dnase.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

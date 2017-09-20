@@ -44,12 +44,12 @@ def newpainters(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = "newpainters.csv"
+  filename = 'newpainters.csv'
   if not os.path.exists(os.path.join(path, filename)):
-    url = "https://raw.github.com/vincentarelbundock/Rdatasets/master/csv" \
-          "/Zelig/newpainters.csv"
+    url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
+          '/Zelig/newpainters.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name="newpainters.csv",
+                               save_file_name='newpainters.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)
