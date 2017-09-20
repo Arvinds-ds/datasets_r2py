@@ -7,14 +7,14 @@ import sys
 import tempfile
 
 sys.path.append('../../../')
-from observations.rdata.tests import tests
+from observations.rdata.mental_tests import mental_tests
 
-def test_tests():
-  """Test module tests.py by downloading tests.csv and testing shape of 
+def test_mental_tests():
+  """Test module mental_tests.py by downloading mental_tests.csv and testing shape of 
     extracted data has 32 rows and 6 columns
   """
   test_path = tempfile.mkdtemp()
-  x_train, metadata = tests(test_path)
+  x_train, metadata = mental_tests(test_path)
   try:
     assert x_train.shape == (32,6)
   except:

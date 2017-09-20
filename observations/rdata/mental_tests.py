@@ -10,7 +10,7 @@ import sys
 from observations.util import maybe_download_and_extract
 
 
-def tests(path):
+def mental_tests(path):
   """Six Mental Tests
 
   These data are from the SAS manual and consist of six mental tests for
@@ -46,7 +46,7 @@ def tests(path):
     path: str.
       Path to directory which either stores file or otherwise file will
       be downloaded and extracted there.
-      Filename is `tests.csv`.
+      Filename is `mental_tests.csv`.
   Returns:
 
     Tuple of np.ndarray `x_train` with 32 rows and 6 columns and
@@ -54,12 +54,12 @@ def tests(path):
   """
   import pandas as pd
   path = os.path.expanduser(path)
-  filename = 'tests.csv'
+  filename = 'mental_tests.csv'
   if not os.path.exists(os.path.join(path, filename)):
     url = 'https://raw.github.com/vincentarelbundock/Rdatasets/master/csv' \
           '/sem/Tests.csv'
     maybe_download_and_extract(path, url,
-                               save_file_name='tests.csv',
+                               save_file_name='mental_tests.csv',
                                resume=False)
 
   data = pd.read_csv(os.path.join(path, filename), index_col=0)

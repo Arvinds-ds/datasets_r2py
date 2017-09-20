@@ -679,7 +679,7 @@ from observations.rdata.public_schools import public_schools
 from observations.rdata.bollen import bollen
 from observations.rdata.cnes import cnes
 from observations.rdata.klein1 import klein1
-from observations.rdata.tests import tests
+from observations.rdata.mental_tests import mental_tests
 from observations.rdata.bladder import bladder
 from observations.rdata.cancer import cancer
 from observations.rdata.cgd import cgd
@@ -1837,7 +1837,7 @@ _allowed_symbols = [
     'bollen',
     'cnes',
     'klein1',
-    'tests',
+    'mental_tests',
     'bladder',
     'cancer',
     'cgd',
