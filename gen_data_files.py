@@ -202,8 +202,8 @@ def gen_init_file(dataset, path, import_prefix='observations.r'):
     def allowed_modules(x):
         return "    '" + x + "'"
  
-    function_imports='\n'.join(dataset.lcitems.map(import_names))
-    allowed_symbols=',\n'.join(dataset.lcitems.map(allowed_modules))
+    function_imports='\n'.join(dataset.lcitems.sort_values().map(import_names))
+    allowed_symbols=',\n'.join(dataset.lcitems.sort_values().map(allowed_modules))
     init_file_str=render('./init_template.tpl',
                          {'function_imports': function_imports,
                           'allowed_symbols': allowed_symbols})
