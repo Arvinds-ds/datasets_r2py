@@ -1,11 +1,8 @@
-"""[Observations.r](https://github.com/edwardlib/observations) provides
-a one line Python API for loading standard data sets in machine
-learning. It automates the process from downloading, extracting,
-loading, and preprocessing data. Observations helps keep the workflow
-reproducible and follow sensible standards.
-
-Observations is a standalone Python library and must be installed
-separate from Edward.
+"""[Observations.r](https://github.com/edwardlib/observations/r) submodule
+provides a one line Python API for loading popular R data sets.
+This module is collection of 1100+ datasets that were originally 
+distributed alongside the statistical software environment R and 
+its add-on packages.
 """
 from __future__ import absolute_import
 from __future__ import division
