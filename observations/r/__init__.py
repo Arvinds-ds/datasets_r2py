@@ -2300,7 +2300,6 @@ _allowed_symbols = [
     'youth_risk2007',
     'youth_risk2009',
     'zea_mays'
-
 ]
 
 # Remove all extra symbols that don't have a docstring or are not explicitly

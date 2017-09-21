@@ -40,7 +40,6 @@ def remove_undocumented(module_name, allowed_exception_list=None):
 # Export modules and constants.
 _allowed_symbols = [
 {{allowed_symbols}}
-
 ]
 
 # Remove all extra symbols that don't have a docstring or are not explicitly
