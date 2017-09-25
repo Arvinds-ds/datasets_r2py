@@ -1,5 +1,0 @@
-,no,Package,Item,Title,Rows,Cols,csv,doc,lcitems,csv_name,doc_name
-431,431,Ecdat,MCAS,The Massachusetts Test Score Data Set,220,17,https://raw.github.com/vincentarelbundock/Rdatasets/master/csv/Ecdat/MCAS.csv,https://raw.github.com/vincentarelbundock/Rdatasets/master/doc/Ecdat/MCAS.html,mcas,MCAS.csv,MCAS.html
-499,499,gap,meyer,A pedigree data on 282 animals deriving from two generations,306,5,https://raw.github.com/vincentarelbundock/Rdatasets/master/csv/gap/meyer.csv,https://raw.github.com/vincentarelbundock/Rdatasets/master/doc/gap/meyer.html,meyer,meyer.csv,meyer.html
-22,22,datasets,USPersonalExpenditure,Personal Expenditure Data,5,5,https://raw.github.com/vincentarelbundock/Rdatasets/master/csv/datasets/USPersonalExpenditure.csv,https://raw.github.com/vincentarelbundock/Rdatasets/master/doc/datasets/USPersonalExpenditure.html,us_personal_expenditure,USPersonalExpenditure.csv,USPersonalExpenditure.html
-86,86,boot,cd4,CD4 Counts for HIV-Positive Patients,20,2,https://raw.github.com/vincentarelbundock/Rdatasets/master/csv/boot/cd4.csv,https://raw.github.com/vincentarelbundock/Rdatasets/master/doc/boot/cd4.html,cd4,cd4.csv,cd4.html
